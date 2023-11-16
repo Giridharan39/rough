@@ -1,0 +1,3100 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        while (true) {
+            System.out.println("Recipe Categories :");
+            System.out.println("1) Breakfast");
+            System.out.println("2) lunch");
+            System.out.println("3) Dinner");
+            System.out.println("4) Snack");
+            System.out.print("choose your category number : ");
+            int c = obj.nextInt();
+            if (c == 1)
+                Breakfast.dish();
+            else if (c==2)
+                Lunch.dish();
+            else if (c == 3)
+                Dinner.dish();
+            else if (c== 4)
+                Snack.dish();
+        }
+    }
+}
+import java.util.Scanner;
+
+public class Breakfast {
+    public static void dish(){
+        Scanner obj=new Scanner(System.in);
+        String[] bf =new String[]{"Tomato Chutney","Pumpkin Chutney","Quinoa Dosa",
+                "Rava Idly","Garlic Chutney","MoongDal Dosa","Cabbage Chutney",
+                "Ragi Dosa","Black Urad dal Dosa","Mint Chutney","Kale Sprouts Sandwich",
+                "Wheat Rava Dosa","Idly Sambar","Kuzhi Paniyaram","Podi Uthappam",
+                "Coconut – Sesame Chutney","Bengali Chirer Polao","Aval Kara Pongal",
+                "Arisi Upma","Onion Chutney"};
+        int n=1;
+        for (String a:bf){
+            System.out.println(n+") "+a);
+            n++;
+        }
+        System.out.print("enter your dish number :");
+        int dn=obj.nextInt();
+        System.out.println("***************************************************************************************************************************************************");
+        if (dn==1)
+            Breakfast.tomato_chutney();
+        else if (dn==2) {
+            Breakfast.pumpkin_chutney();
+        }
+        else if (dn==3) {
+            Breakfast.quinoa_dosa();
+        }
+        else if (dn==4) {
+            Breakfast.rava_idly();
+        }
+        else if (dn==5) {
+            Breakfast.garlic_chutney();
+        }
+        else if (dn==6) {
+            Breakfast.moongdal_dosa();
+        }
+        else if (dn==7) {
+            Breakfast.cabbage_chutney();
+        }
+        else if (dn==8) {
+            Breakfast.ragi_dosa();
+        }
+        else if (dn==9) {
+            Breakfast.black_urad_dal_dosa();
+        }
+        else if (dn==10) {
+            Breakfast.mint_chutney();
+        }
+        else if (dn==11) {
+            Breakfast.kale_sprouts_sandwich();
+        }
+        else if (dn==12) {
+            Breakfast.wheat_rava_dosa();
+        }
+        else if (dn==13) {
+            Breakfast.idly_sambar();
+        }
+        else if (dn==14) {
+            Breakfast.kuzhi_paniyaram();
+        }
+        else if (dn==15) {
+            Breakfast.podi_uthappam();
+        }
+        else if (dn==16) {
+            Breakfast.coconut_sesame_chutney();
+        }
+        else if (dn==17) {
+            Breakfast.bengali_chirer_polao();
+        }
+        else if (dn==18) {
+            Breakfast.aval_kara_pongal();
+        }
+        else if (dn==19) {
+            Breakfast.arisi_upma();
+        }
+        else if (dn==20) {
+            Breakfast.onion_chutney();
+        }
+        else{
+            System.out.println("no dish found");
+        }
+        System.out.println("***************************************************************************************************************************************************");
+    }
+    public static void tomato_chutney(){
+        String a = """
+INGREDIENTS :
+------------
+1 cups Tomatoes
+1 tsp Tamarind juice 
+2 tsp Cooking Oil 
+1 dashes Salt 
+Roast and Grind
+1 tsp Channa dal 
+1 tsp Coconut grated 
+3 sticks Red Chilli 
+Tempering Ingredients
+0.25 tsp Mustard Seeds 
+0.25 tsp Urad Dal 
+1 sticks Curry leaves 
+1 pinches Hing Powder 
+
+Instructions
+------------
+Step 1
+Wash and roughly chop the tomatoes. Heat oil in a pan and add channa dal. Roast till golden brown and remove from fire.
+Step 2
+In the same oil, add red chilies and roast till they are done. Set aside with the channa dal.
+Step 3
+Add roughly chopped tomatoes and cook for 2 – 3 minutes until they turn mushy. Switch off the stove and allow tomatoes to cool down.
+Step 4
+Once cooled down, grind channa dal and red chili along with grated coconut, soaked tamarind and salt first, followed by sauteed tomatoes to a smooth consistency.
+Step 5
+Transfer to the serving bowl and heat a pan for the tempering.
+Step 6
+Temper with the ingredients given in the “For temper” section. Serve with hot idlis or dosas.
+                """;
+        System.out.println(a);
+    }
+    public static void pumpkin_chutney(){
+        String a = """
+                Ingredients
+                ------------
+                1 cups Yellow Pumpkin \s
+                3 sticks Red Chilli\s
+                1 dashes Salt\s
+                2 tsp Cooking Oil\s
+                1 tbsp Urad Dal\s
+                3 sticks Garlic Cloves\s
+                0.25 tsp Coriander Seeds\s
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds\s
+                0.25 tsp Urad Dal\s
+                1 sticks Curry leaves\s
+                1 tsp Cooking Oil \s
+                
+                Instructions
+                ------------
+                Step 1
+
+                Heat a pan and add 2 tsp of oil to it. When it is ready, roast the urad dal to a golden brown color. In the same oil, add the coriander seeds, followed by red chilies, garlic and fry till they are golden brown.
+                Step 2
+
+                In a mixer jar, add the roasted urad dal, coriander seeds, red chili, garlic, salt, and grind them coarsely.
+                Step 3
+
+                In the same pan add the pumpkin cubes and roast till they begin to get brown roasted marks on them. Allow them to cool. Add the cooked pumpkin, soaked piece of tamarind and grind them to a smooth consistency.
+                Step 4
+
+                Transfer to a serving bowl and temper them with the ingredients given in the to temper column. Serve with hot idlis or dosas. The spiciness as well as the mild sweetness of this pumpkin chutney will make you try them over again.
+                """;
+        System.out.println(a);
+    }
+    public static void quinoa_dosa(){
+        String a = """
+                Ingredients
+                ------------
+                Main Ingredients
+                 cups Quinoa\s
+                1 cups Idli Rice\s
+                0.5 cups Urad Dal\s
+                0.25 cups Fenugreek Seeds\s
+                1  Salt (as needed)
+                1  Oil (to grease and make dosa)
+                
+                Instructions
+                ------------
+                Step 1
+                In a wide bowl take one cup of quinoa and idli rice each. Soak them together overnight or for 6 hours. In another bowl, soak Urad dal along with fenugreek seeds for 3 hrs.
+                Step 2
+                Wash the urad dal and grind them to a smooth consistency using a mixer or a wet grinder. Follow the same step for rice + quinoa.
+                Step 3
+                Mix these two batters together along with salt and allow it to ferment for 8 hours.
+                Step 4
+                After eight hours, they would have fermented. Heat a dosa pan and pour a ladle of batter in the center and spread in a circular motion.
+                Step 5
+                Drizzle oil and flip over the other side. It takes about 2-3 mins to cook each dosa. Serve with any chutney of your choice.
+                """;
+        System.out.println(a);
+    }
+    public static void rava_idly(){
+        String a = """
+                Ingredients
+                ------------
+                Main Ingredients
+                1 cups Rava / Sooji / Semolina\s
+                0.75 cups Sour Curd\s
+                0.5 cups Eno Fruit Salt \s
+                1  Salt (as needed)
+                1  Oil (as needed)
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds\s
+                0.25 tsp Urad Dal\s
+                0.5 tsp Channa Dal\s
+                1  Cashew Pieces (Optional)
+                2 tsp Carrot Pieces (Finely chopped)\s
+                1 sticks Curry Leaves\s
+                
+                Instructions
+                ------------
+                Step 1
+                In a wide bowl, whisk the curd and set aside. Heat a pan and add oil. Once it shimmers, add mustard, urad dal, curry leaves and channa dal.
+                Step 2
+                After they splutter, add the cashew pieces. When they are golden brown, add the Rava / Sooji to it and saute for about 2 - 3 mins for the tadka to coat well.
+                Step 3
+                Switch off the flame and allow it to come to room temperature. After they have cooled down, add the Rava / Sooji mix to the whisked curd. Add salt to it and mix them to form a dosa batter consistency. Add finely chopped carrots to the batter.
+                Step 4
+                Set aside for about 15 mins. Meanwhile, grease the idli plates. While you are ready to make the Rava idlis, add half a tsp of Eno fruit salt.
+                Step 5
+                Wait until it starts to froth. Mix together. Pour a ladle of the batter to the greased plates. Steam them in an idli pot for about 10 mins.
+                Step 6
+                Remove the cooked idli and serve them with any accompaniments of your choice.
+                """;
+        System.out.println(a);
+    }
+    public static void garlic_chutney(){
+        String a = """
+                Ingredients
+                ------------
+                Main Ingredients
+                1 cups Peeled Garlic\s
+                2 tsp Urad Dal \s
+                2 sticks Red Chilli \s
+                2 tsp Tamarind Juice\s
+                1 dashes Salt\s
+                Tempering
+                0.25 tsp Mustard Seeds\s
+                0.25 tsp Urad Dal\s
+                2 tsp Gingelly Oil\s
+                
+                Instructions
+                ------------
+                Step 1
+
+                Peel the skin and wash the garlic cloves. Wipe them dry and set aside.
+                Step 2
+
+                Heat a pan and add a tsp of gingelly oil to it. Once they are hot, add Urad dal, red chili to it and roast till they turn brown. Remove from the pan and set aside.
+                Step 3
+
+                In the remaining oil, add the garlic cloves and roast till they turn golden brown. Transfer them and allow it to cool down.
+                Step 4
+
+                Add the roasted urad dal red chili and salt and grind them coarsely. Soak the tamarind in water and add them to the mixer jar. Finally, add the roasted garlic cloves and grind to a smooth paste. Sprinkle water occasionally.
+                Step 5
+
+                Transfer to a bowl and temper them with mustard seeds and urad dal using rest of the gingelly oil.
+                """;
+        System.out.println(a);
+    }
+    public static void moongdal_dosa(){
+        String a = """
+                Ingredients
+                ------------
+                1.5 cups Split Moong dal \s
+                3 sticks Green Chilli\s
+                0.5 sticks Ginger\s
+                 tsp Jeera / Cumin Seeds\s
+                1 tsp Coriander Leaves\s
+                1 dashes Salt\s
+                2 tbsp Cooking Oil \s
+                
+                Instructions
+                ------------
+                Step 1
+                Measure and soak the moong dal in water for 4 hours. After this, drain and wash the dal.
+                Step 2
+                Grind the moong dal along with green chili and ginger to a smooth batter. Transfer to a bowl and add salt to taste.
+                Step 3
+                Add jeera and finely chopped coriander leaves. Mix them well.
+                Step 4
+                Heat a dosa Tawa and spread the moong dal batter in a circular motion. Drizzle oil and cook for about one minute. Flip over to the other side and cook till done.
+                Step 5
+                Serve these soft and hot dosas with any chutney of your choice. We had them with Carrot chutney.
+                """;
+        System.out.println(a);
+    }
+    public static void cabbage_chutney(){
+        String a = """
+                Ingredients
+                ------------
+                Saute and Grind
+                1 cups Cabbage (Fine Chopped)
+                0.5 tsp Channa dal \s
+                1 tsp Peanuts\s
+                3 sticks Green chili\s
+                0.5 tsp Coriander Seeds \s
+                2 sticks Garlic\s
+                0.25 tsp Jeera / Cumin Seeds\s
+                1 dashes Jaggery Powder\s
+                1 tbsp Tamarind Juice\s
+                1 dashes Salt\s
+                Tempering
+                2 tbsp Cooking Oil \s
+                0.25 tsp Mustard Seeds\s
+                0.25 tsp Urad Dal \s
+                1 sticks Curry leaves\s
+                
+                Instructions
+                ------------
+                Step 1
+                                
+                Roughly chop the cabbage and wash them. Soak the tamarind in water. Measure a cup and set aside. Heat a pan and drizzle oil in it.
+                Step 2
+                                
+                Add the channa dal, peanuts to it and roast till golden brown. In the same oil, add green chili, coriander, and finally jeera/cumin seeds. Remove from oil and set aside.
+                Step 3
+                                
+                In the leftover oil, add cabbage and saute them for about 5 – 7 mins until rawness goes off. Add half of the required salt to quicken the cooking process.
+                Step 4
+                                
+                Switch off the stove and allow the ingredients to cool. In a mixer, add the roasted dal, green chili, and spices along with the rest of the salt. Ground them to a fine powder.
+                Step 5
+                                
+                Add the soaked tamarind, cooked cabbage, and grind to a smooth chutney. You will not need water to grind this, as the cabbage will ooze out water.
+                """;
+        System.out.println(a);
+    }
+    public static void ragi_dosa(){
+        String a = """
+                Ingredients
+                ------------
+                1.5 cups Ragi Flour\s
+                1 cups Idli Rice\s
+                0.5 cups Urad dal\s
+                0.25 tsp Fenugreek seeds\s
+                4 tsp Gingelly Oil\s
+                3 dashes Salt\s
+                
+                Instructions
+                ------------
+                Step 1
+                In a wide bowl soak rice for 4 hours. Soak the Urad dal and fenugreek seeds separately in another bowl for 3 hours.
+                Step 2
+                Drain water and grind the urad dal to a smooth consistency. Remove from the mixer/ wet grinder and continue to grind the rice after washing it.
+                Step 3
+                Remove them from the grinder and add to the urad dal. Before washing off the grinder, add the ragi flour and grind for a couple of minutes with little water.
+                Step 4
+                Transfer them to the rice + urad dal and add the required salt and combine them. Allow them to ferment overnight.
+                Step 5
+                Once they have fermented enough, heat a dosa pan and make dosas in a circular motion as we do for regular dosas. Drizzle little oil to the dosa.
+                Step 6
+                Flip over the other side and cook until done. Remove from the dosa pan and serve hot with spicy chutney of your choice. We had them with coconut- garlic chutney.
+                """;
+        System.out.println(a);
+    }
+    public static void black_urad_dal_dosa(){
+        String a = """
+                Ingredients
+                ------------
+                Main Ingredients
+                4 cups Idli Rice\s
+                1 cups Whole Black Urad dal\s
+                1 tsp Gingelly Oil \s
+                2 dashes Salt\s
+                1 tsp Fenugreek Seeds\s
+                
+                Instructions
+                ------------
+                Step 1
+                                
+                Wash and soak the 4 cups of Idli rice and one cup of black urad dal for about 7 - 8hours. Soak a tsp of fenugreek seeds in a small bowl for 2 hours.
+                Step 2
+                                
+                Clean the wet grinder and add the washed dal along with fenugreek seeds. Grind dal for half an hour by sprinkling water to it. It will raise up much more than the deskinned urad dal.
+                Step 3
+                                
+                Remove from grinder and follow with washed Idli rice. Ground until they are in a smooth consistency.
+                Step 4
+                                
+                Mix the dal and rice batter together along with salt. Let it rest to ferment for 8 hours or overnight.
+                Step 5
+                                
+                Heat a dosa pan and spread a ladle of the batter in a circular motion. Drizzle with gingelly oil and allow it to cook.
+                Step 6
+                                
+                Flip over the other side and cook for another 2 mins. Serve hot with any spicy chutney of your choice. We had Coconut- Garlic Chutney.
+                """;
+        System.out.println(a);
+    }
+    public static void mint_chutney(){
+        String a = """
+                Ingredients
+                ------------
+                Main Ingredients
+                1 cups Mint leaves / Pudina ((Loosely Packed))
+                0.5 cups Grated Coconut\s
+                3 sticks Green Chili\s
+                0.25 tsp Turmeric powder\s
+                1 dashes Salt\s
+                1 tbsp Lemon Juice\s
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds\s
+                0.25 tsp Urad Dal\s
+                1 tsp Cooking Oil \s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash and clean the mint leaves. Set them aside. Grate coconut leaving behind the last brown/black edges.
+                Step 2
+                Heat a pan and drizzle oil to it. Add the mint leaves and sauté a minute until they shrink. Switch off the stove.
+                Step 3
+                In a mixer jar, add grated coconut, green chili, sautéed mint leaves, a pinch of turmeric powder, and salt. Grind them to a smooth chutney consistency. Add the lemon juice from half of the lemon.
+                Step 4
+                Temper the chutney with mustard seeds and Urad dal in a heated pan. Serve this simple chutney with any breakfast choices.
+                """;
+        System.out.println(a);
+    }
+    public static void kale_sprouts_sandwich(){
+        String a = """
+                Ingredients
+                ------------
+                Main Ingredients
+                4 sticks Whole Wheat Bread Slices\s
+                1 cups Kale greens  ((Tightly packed))
+                2 tbsp Sprouted Green gram\s
+                1 tsp Grated Carrot\s
+                2 sticks Cheese slice\s
+                1 tsp Finely Chopped Onion\s
+                1 dashes Pepper powder\s
+                0.5 dashes Salt\s
+                1 tsp Lemon juice\s
+                Tempering
+                1 tsp Jeera seeds\s
+                1 tsp Olive oil \s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash and roughly chop the kale greens. Chop onions, carrots finely. Wash the sprouts and set aside.
+                Step 2
+                Heat a pan and drizzle oil in it. Add jeera seeds and wait until they are roasted. Add finely chopped onion and carrots and sauté for a while until they are half done.
+                Step 3
+                Add the chopped kale greens and mix. Cook until they are done and add salt and pepper to it. Switch off the stove and then add sprouts. Toss them in that heat and add lemon juice.
+                Step 4
+                Grease a Tawa in the side. Smear a little of butter/olive oil on both sides of the bread. Lay down a slice of cheese and load with sandwich filling.
+                Step 5
+                Cover with another greased bread slice. Place in a Tawa and keep weight on top of it. Cook for a minute. Flip over the other side and cook another minute, until it is done. Serve this hearty and healthy sandwich for breakfast or any meal.
+                """;
+        System.out.println(a);
+    }
+    public static void wheat_rava_dosa(){
+        String a = """
+                Ingredients
+                ------------
+                Main Ingredients
+                1 cups Wheat Rava (Heaped)\s
+                1 tbsp Urad Dal\s
+                1 tbsp Chana Dal\s
+                0.25 tsp Jeera seeds or Ajwain\s
+                0.5 cups Onion (Chopped)\s
+                1 qts Green Chilli\s
+                0.5 sticks Ginger\s
+                1  Salt (as needed)
+                1  Oil (as needed)
+                
+                Instructions
+                ------------
+                Step 1
+                Wash the wheat rava/ godhumai rava and soak it in water for 4 hours along with the dals. Use water just enough to cover them.
+                Step 2
+                After it is soaked, transfer them to a mixer jar. Add green chili, ginger piece, and grind to a smooth consistency. Do not add more water at the beginning. The soaked wheat rava itself will suffix the water content.
+                Step 3
+                Transfer the ground batter to a bowl. Now check the consistency of the batter. Let it not be too thick as the idli batter. Make it to a little runny consistency for free-flowing.
+                Step 4
+                Add Jeera / Ajwain seeds, chopped onions to it along with required salt to taste.
+                Step 5
+                Heat a dosa pan and pour the batter from outwards. Fill in the gaps and drizzle oil.
+                Step 6
+                Allow it to cook for about 2 mins and flip over the other side. Cook until its done and transfer to a plate. Serve hot with chutney, sambar of your choice.
+                """;
+        System.out.println(a);
+    }
+    public static void idly_sambar(){
+        String a = """
+                Ingredients
+                ------------
+                Main Ingredients
+                0.25 cups Toor Dal\s
+                0.25 cups Moong Dal\s
+                0.25 cups Small Onions\s
+                0.5 cups Yellow Pumpkin\s
+                2  Brinjal- Small\s
+                3  Green Chili\s
+                1  Tamarind Juice (as needed)
+                2 tsp Sambar Powder\s
+                0.25 tsp Turmeric Powder\s
+                1 pinches Asafoetida powder\s
+                1 sticks Coriander Leaves\s
+                1  Salt  (for taste)
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds\s
+                0.25 tsp Urad Dal\s
+                2  Red Chilli\s
+                2 sticks Curry Leaves\s
+                1  Gingelly Oil (as needed)
+                
+                Instructions
+                ------------
+                Step 1
+                Wash and pressure cook dal with a pinch of turmeric powder for three whistles. Allow them to cool down.
+                Step 2
+                Mash the dal and set aside. Extract a thin juice from tamarind and add turmeric powder to it.
+                Step 3
+                Peel the small onions and fine chop the yellow pumpkin. Heat a kadai and drizzle oil as required.
+                Step 4
+                Once its hot, add mustard seeds, Urad dal followed by red chilli and curry leaves. Add small onions, slit green chili and saute until they turn golden brown. Add finely chopped pumpkin and cook until they are half done.
+                Step 5
+                Add the tamarind juice, salt and sambar powder. Cover with a lid and cook until the rawness of the mixture goes off.
+                Step 6
+                Add the mashed dal and cook until they thicken. Add Asafoetida powder before switching off the stove for that wonderful aroma. Garnish with coriander leaves and serve with hot idles or dosa or pongal.
+                """;
+        System.out.println(a);
+    }
+    public static void kuzhi_paniyaram(){
+        String a = """
+                Ingredients
+                ------------
+                1 cups Idli batter\s
+                2 tbsp Onions\s
+                1 sticks Green chilli\s
+                0.5 tsp Ginger\s
+                1 tbsp Grated Carrot\s
+                1 sticks Curry leaves\s
+                0.25 dashes Salt\s
+                3 tbsp Gingelly Oil\s
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds\s
+                0.25 tsp Urad Dal\s
+                0.25 tsp Channa Dal\s
+                
+                Instructions
+                ------------
+                Step 1
+                In a wide bowl, add a cup of idli batter. Finely chop the onions, green chili, curry leaves and ginger.
+                Step 2
+                Grate the carrot and set aside. Heat a pan and drizzle some oil. Once they are hot enough, add mustard seeds, urad dal, channa dal, curry leaves, green chilies and allow them to splutter.
+                Step 3
+                Saute in the onions until they turn golden brown. Toss the grated carrot for a while and add the mixture to the idli batter.
+                Step 4
+                Do a taste test to check the salt in it and proceed. Heat up the appe pan and drizzle gingelly oil. Once they are hot, add a spoonful of batter to each mold.
+                Step 5
+                Allow it to cook for 1 – 2 mins until they are golden brown. Using a wooden skewer to flip over to the next side and cook until they are done.
+                Step 6
+                Once done, transfer to a bowl and pack while they come to room temperature. Serve with any chutney of choice. This will definitely please the kids as well as give them healthy options for eating vegetables. Do try and enjoy it.
+                """;
+        System.out.println(a);
+    }
+    public static void podi_uthappam(){
+        String a = """
+                Ingredients
+                ------------
+                1 cups Dosa batter\s
+                3 tsp Idli milagai podi\s
+                3 tbsp Onion\s
+                1 tbsp Coriander Leaves\s
+                2 tbsp Gingelly Oil\s
+                
+                Instructions
+                ------------
+                Step 1
+                Heat a dosa pan. Finely chop the onion and coriander leaves set them aside.
+                Step 2
+                Once the dosa pan turns hot, pour a ladle of dosa batter to the center of the pan. Do not swirl it.
+                Step 3
+                Swiftly spread idli milagai podi, finely chopped onions, and coriander to the uthappam. drizzle sesame oil to the Uthappam. Let it cook until golden brown. This would take at least a minute or two.
+                Step 4
+                Flip over the Uthappam and allow it to cook for another minute. Serve them hot with chutneys or sambar of your choice.
+                """;
+        System.out.println(a);
+    }
+    public static void coconut_sesame_chutney(){
+        String a = """
+                Ingredients
+                ------------
+                Adjust Servings\s
+                4
+                0.5 cups Grated Coconut\s
+                2 tbsp White Sesame Seeds\s
+                2 sticks Green Chili\s
+                2 sticks Garlic Cloves\s
+                1 dashes Salt\s
+                1 tsp Lemon Juice\s
+                
+                Instructions
+                ------------
+                Step 1
+                                
+                Heat a pan and dry roast sesame seeds for about 3 mins until it splutters. Let it cool down to room temperature.
+                Step 2
+                                
+                In a mixer jar, add the grated coconut, green chili, salt, garlic cloves. Finally, add the roasted sesame seeds and grind it to a smooth chutney.
+                Step 3
+                                
+                Squeeze about one teaspoon of lemon juice to the grounded chutney. Serve with hot idlis and crispy dosas.
+                """;
+        System.out.println(a);
+    }
+    public static void bengali_chirer_polao(){
+        String a = """
+                Ingredients
+                -----------
+                Adjust Servings\s
+                4
+                1 cups Thick White Poha/ Aval/Beaten rice flakes/ \s
+                3 tbsp Chopped Onions\s
+                2 tbsp Chopped Potatoes\s
+                2 tbsp Carrots\s
+                2 sticks Crushed Garlic\s
+                0.5 tsp Fine Chopped Ginger\s
+                2 tsp Green chili \s
+                1 tsp Lemon Juice \s
+                1 tsp Coriander Leaves\s
+                1 dashes Salt\s
+                1 dashes Sugar\s
+                0.5 tsp Turmeric Powder\s
+                0.5  tsp Garam Masala Powder\s
+                Tempering Ingredients
+                0.5 tsp Cumin Seeds\s
+                1 sticks Cardamom\s
+                1 sticks Cloves\s
+                1 sticks Cinnamon\s
+                1 sticks Bay leaf\s
+                1 tsp Cashews\s
+                1 tsp Raisins\s
+                
+                Instructions
+                ------------
+                Step 1
+                                
+                Wash the Poha under running water and drain the water completely. Cover with a lid and let it allow to rest for 10 mins.
+                Step 2
+                                
+                Chop Onions, green chili, ginger, potatoes, carrots, and coriander leaves.
+                Step 3
+                                
+                Heat a pan and add oil to it. Once it turns hot, add cumin seeds followed by cardamom, cloves, cinnamon bay leaf, and roast till golden brown.
+                Step 4
+                                
+                Add cashews, raisins followed by onions, green chili, ginger along with vegetables. Saute for about 2 min and add turmeric powder to it.
+                Step 5
+                                
+                Drizzle about a quarter cup of water to the vegetables and cook them with a covered lid. Wait until 5 mins for the vegetables to be cooked. Add the washed Poha to it and combine it.
+                Step 6
+                                
+                Add garam masala, salt, and sugar to taste. Mix together and close with a lid. Let it cook for 3 mins with a very low flame.
+                Step 7
+                                
+                Top it off with lemon juice and coriander leaves. Serve hot with a cup of tea.
+                """;
+        System.out.println(a);
+    }
+    public static void aval_kara_pongal(){
+        String a = """
+                Ingredients
+                ------------
+                Adjust Servings\s
+                5
+                1  cups Aval/ Poha\s
+                3 tbsp Moong dal \s
+                0.5 tsp Asafoetida Powder\s
+                0.25 tsp Turmeric Powder\s
+                1 dashes Salt\s
+                Tempering Ingredients
+                3 tsp Ghee\s
+                0.5 tsp Cumin seeds\s
+                0.5 tsp Pepper corns\s
+                1 tsp Chopped Ginger \s
+                1 sticks Curry leaf\s
+                1 tsp Cashews\s
+                
+                Instructions
+                ------------
+                Step 1
+                                
+                Heat a pressure pan and dry roast Moong dal until it is golden brown.
+                Step 2
+                                
+                Wash the moong dal and add turmeric powder to it. Pressure cook for three whistles.
+                Step 3
+                                
+                Dry roast the poha / Aval until it turns crisp.
+                Step 4
+                                
+                Wash the Aval and add water to it. Cook covered for about 8 mins until it is half done.
+                Step 5
+                                
+                Add the cooked dal to it along with asafoetida powder. Combine together.
+                Step 6
+                                
+                Heat Ghee in a small pan and add cumin seeds, peppercorns, curry leaves followed by cashews. Roast till golden brown and transfer contents to the Pongal.
+                Step 7
+                                
+                Mix together and serve hot with chutney/ Sambar.
+                """;
+        System.out.println(a);
+    }
+    public static void arisi_upma(){
+        String a = """
+                Ingredients
+                ------------
+                Adjust Servings\s
+                4
+                0.75 cups Raw Rice \s
+                0.25 cups Toor dal \s
+                0.25  tsp Pepper corns \s
+                1 dashes Salt \s
+                Tempering Ingredients
+                2 tbsp Gingelly Oil \s
+                0.25 tsp Mustard Seeds \s
+                0.25 tsp Urad dal \s
+                0.5 tsp Channa Dal \s
+                3 sticks Red Chilli \s
+                1 sticks Curry leaves\s
+                
+                Instructions
+                ------------
+                Step 1
+                                
+                Measure 3/4th cup of rice with 1/4th cup of toor dal. Wash them thoroughly and place them on a strainer to completely drain off water. SEt it aside for 15 mins.
+                Step 2
+                                
+                Transfer the rice- dal mixture to a mixer jar and add pepper corns to it.
+                Step 3
+                                
+                Grind it in a Pulse mode until the rice is broken into a rava consistency.
+                Step 4
+                                
+                Heat a pressure cooker and add gingelly oil to it. Add mustard seeds, urad dal, channa dal, red chilli and curry leaves. Wait until it is roasted.
+                Step 5
+                                
+                Add three cups of water to it. Once it is boiled, add salt and asafoetida powder. Add broken rice rava to the boiling water in batches. Mix and take care there are no lumps being formed.
+                Step 6
+                                
+                Pressure cook the upma in a low flame for ten mins until the first whistle comes. Switch off the stove.
+                Step 7
+                                
+                Open the lid after pressure settles off. Sprinkle grated coconut and fluff off the upma. Serve this upma with jaggery powder or any chutney.
+                """;
+        System.out.println(a);
+    }
+    public static void onion_chutney(){
+        String a = """
+                Ingredients
+                -----------
+                Adjust Servings\s
+                4
+                1 cups Cubed Onions\s
+                2 tsp Urad dal\s
+                4 sticks Red Chilli \s
+                1 tbsp Grated coconut\s
+                1 tbsp Tamarind juice \s
+                1 dashes Salt \s
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds \s
+                0.25 tsp Urad Dal \s
+                1 sticks Curry Leaves \s
+                2 tsp Cooking Oil \s
+                
+                Instructions
+                ------------
+                Step 1
+                                
+                Heat a pan and add a teaspoon of Oil to it. Once it turns hot, add two teaspoons of urad dal and red chilli. Roast till they are golden brown and transfer to a mixer jar. Let it cool down. Dry Grind them with salt and tamarind.
+                Step 2
+                                
+                Meanwhile, sautee the chopped onions in the same pan.
+                Step 3
+                                
+                Sautee the onions until golden in color. This should take about 4- 5 mins. Let it cool down.
+                Step 4
+                                
+                Add the sauteed onions to the grounded dry ingredients. Add a tablespoon of grated coconut to it.
+                Step 5
+                                
+                Grind them to a fine chutney without adding water.
+                Step 6
+                                
+                In a small pan add oil to it. Once it is hot, add mustard seeds, urad dal, and curry leaves. Transfer the tempering to the grounded chutney. Serve with Idlis or Dosa.
+                """;
+        System.out.println(a);
+    }
+}
+import java.util.Scanner;
+public class Lunch {
+    public static void dish(){
+        Scanner obj=new Scanner(System.in);
+        System.out.print("""
+                1) Carrot Poriyal
+                2) Brinjal Sambhar
+                3) Vazhaithandu Poriyal
+                4) Coconut Rice
+                5) Mixed Vegetable Salna
+                6) Cabbage Peas Poriyal
+                7) Vazhaikkai Poriyal
+                8) Mor Kuzhambu
+                9) Jeera Rice
+                10) Surakai kootu
+                11) Quinoa Bisibelabath
+                12) Paruppu Podi
+                13) Thuvaram Paruppu Sadam
+                14) Andhra Puliogare
+                15) MILAGU KULAMBU
+                16) Vegetable Pulao
+                17) Vazhaikkai Kola Urundai
+                18) Brinji Rice
+                19) Kadhamba Sadham
+                20) Instant Garlic Pickle
+                """);
+        System.out.print("enter your dish number :");
+        int dn = obj.nextInt();
+        System.out.println("***************************************************************************************************************************************************");
+        if (dn == 1)
+            Lunch.carrot_poriyal
+                    ();
+        else if (dn == 2) {
+            Lunch.brinjal_sambhar();
+        } else if (dn == 3) {
+            Lunch.vazhaithandu_poriyal();
+        } else if (dn == 4) {
+            Lunch.coconut_rice();
+        } else if (dn == 5) {
+            Lunch.mixed_vegetable_salna();
+        } else if (dn == 6) {
+            Lunch.cabbage_peas_poriyal();
+        } else if (dn == 7) {
+            Lunch.vazhaikkai_poriyal();
+        } else if (dn == 8) {
+            Lunch.mor_kuzhambu();
+        } else if (dn == 9) {
+            Lunch.jeera_rice();
+        } else if (dn == 10) {
+            Lunch.surakai_kootu();
+        } else if (dn == 11) {
+            Lunch.quinoa_bisibelabath();
+        } else if (dn == 12) {
+            Lunch.paruppu_podi();
+        } else if (dn == 13) {
+            Lunch.thuvaram_paruppu_sadam();
+        } else if (dn == 14) {
+            Lunch.andhra_puliogare();
+        } else if (dn == 15) {
+            Lunch.milagu_kulambu();
+        } else if (dn == 16) {
+            Lunch.vegetable_pulao();
+        } else if (dn == 17) {
+            Lunch.vazhaikkai_kola_urundai();
+        } else if (dn == 18) {
+            Lunch.brinji_rice();
+        } else if (dn == 19) {
+            Lunch.kadhamba_sadham();
+        } else if (dn == 20) {
+            Lunch.instant_garlic_pickle();
+        } else {
+            System.out.println("no dish found");
+        }
+        System.out.println("***************************************************************************************************************************************************");
+    }
+    public static void carrot_poriyal(){
+        System.out.println("""
+                Ingredients
+                ------------
+                Main Ingredients
+                2 cups Carrot (Grated)
+                3 sticks Green chillies\s
+                0.25 sticks Ginger\s
+                2 tsp Grated Coconut\s
+                1 dashes Salt\s
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds\s
+                0.25 tsp Chana dal \s
+                1 sticks Curry Leaves\s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash, peel, and grate carrots using the large hole in the grater.
+                Step 2
+                Heat oil in a Kadai, add the ingredients in the To temper field, one by one, until all splutters. Now add green chilies and ginger pieces too.
+                Step 3
+                Add the grated carrots to it and stir for 2-3 mins. Sprinkle water and close with a lid
+                Step 4
+                After 3- 4mins, open lid and add salt and grounded coconut and stir to mix uniformly.
+                Step 5
+                Place the stove in simmer for 1 – 2 mins and transfer to a serving bowl. Top with curry leaves and coriander leaves.
+                """);
+    }
+    public static void brinjal_sambhar(){
+        System.out.println("""
+                Ingredients
+                ------------
+                0.5 cups Toor Dal/ Red Gram ( Thuvaram Paruppu)\s
+                0.25 cups Tamarind (Soaked)\s
+                0.25 tsp Turmeric Powder \s
+                2 tsp Sambar Powder\s
+                6 sticks Purple Brinjal\s
+                2 dashes Salt\s
+                Grinding Ingredients
+                2 tsp Grated Coconut\s
+                0.25 tsp Cumin Seeds\s
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds\s
+                0.25 tsp Urad Dal\s
+                0.25 tsp Fenugreek Seeds\s
+                1 sticks Curry Leaf\s
+                1 tbsp Cooking Oil\s
+                2 dashes Hing/ Asafoetida/ Perungayam Powder\s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash Toor dal and boil in the pressure cooker for three whistles till mashed.
+                Step 2
+                Soak tamarind and strain the tamarind water and place it in a Kadai and allow it to boil till the raw smell goes out. Add sambar powder and turmeric powder and allow it to boil.
+                Step 3
+                Meanwhile, in another pan, add oil and once it gets heated up, put the ingredients from the to temper column. Make sure the fenugreek seeds do not get black as it makes render a bitter taste to the sambar and ruin its taste.
+                Step 4
+                Add Brinjal and saute it for 2 mins and add it to the boiling sambar. Cook until the brinjal is half done and add the mashed dal to it.
+                Step 5
+                After 4 mins, add the grounded coconut, cumin paste and allow it to boil for another 2 mins and garnish with coriander leaves and curry leaves. Serve with hot rice and some potato fry.
+                """);
+    }
+    public static void vazhaithandu_poriyal(){
+        System.out.println("""
+                Ingredients
+                ------------
+                Main Ingredients
+                1 cups Banana stem (Cleaned and Chopped)
+                2 tsp Moong dal \s
+                0.25 cups Grated Coconut\s
+                3 tbsp Butter milk (Diluted to make one cup )
+                Tempering
+                0.25 tsp Mustard seeds\s
+                0.25 tsp Urad Dal \s
+                1 sticks Curry Leaf\s
+                2 sticks Red chilli\s
+                1 tbsp Coconut Oil\s
+                
+                Instructions
+                ------------
+                Step 1
+                Remove the outer thin stems of the banana stem and peel the outer covering of the banana stem with a peeler.
+                Step 2
+                Slice them into thick circles and keep removing the fiber that comes in between them. Chop the banana stem into small blocks and place them immersed in water added with buttermilk. This is done to avoid discoloration of the vegetable.
+                Step 3
+                Meanwhile, soak the moong dal for 20 mins in the side. Once the banana stem is chopped, heat oil in a pan.
+                Step 4
+                Once the oil is hot, temper with the ingredients in the to temper section. Once it splutters, drain the banana stem from water and add it to the pan. Stir continuously for 3 mins and add the soaked moong dal.
+                Step 5
+                Cover with the lid and cook for about 8 – 10 mins, occasionally checking them. not required to add water, as the vegetable itself will ooze out water.
+                Step 6
+                After its cooked, add salt as needed and mix uniformly. finally, add grated coconut and stir for 2 mins and switch off the stove.
+                Step 7
+                Flavorful and healthy banana stem/vazhaithandu poriyal is ready to be served.
+                """);
+    }
+    public static void coconut_rice(){
+        System.out.println("""
+                Ingredients
+               ------------
+                Main Ingredients
+                1 cups Cooked Raw rice\s
+                0.5 cups Grated Fresh Coconut\s
+                3 sticks Green chilli\s
+                2 tsp Soaked Urad dal\s
+                1 dashes Salt\s
+                Tempering Ingredients
+                0.25 tsp Mustard seeds\s
+                0.25 tsp Urad Dal\s
+                1 sticks Red Chili\s
+                1 sticks Curry Leaves\s
+                0.25 tsp Cashews \s
+                2 tbsp Coconut Oil\s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash and cook rice for 3 whistles. Once pressure is done, spread them in a plate and allow it to cool down. Soak the urad dal in the water while this is happening.
+                Step 2
+                Once the Urad dal is soaked for 15 – 20 min, drain water. Heat a pan and dry roast the soaked urad dal until golden brown. Set this aside and heat coconut oil in the same pan.
+                Step 3
+                Once it is medium hot, add green chili and items in the to temper column. Make sure to add the cashews at the last to avoid over burning.
+                Step 4
+                Add freshly grated coconut and roast them until a nice aroma comes in. This will come after frying for 3- 4 mins.
+                Step 5
+                Switch off the fire and add cooled down rice. Add salt and uniformly mix the rice along with it.
+                Step 6
+                Lastly, add the roasted urad dal to the coconut rice and serve with roasted potatoes.
+                """);
+    }
+    public static void mixed_vegetable_salna(){
+        System.out.println("""
+                Ingredients
+                ------------
+                Main Ingredients
+                2 cups Mixed Vegetables ((Carrot, Peas, Green Peas, potato and Corn) )
+                0.5 cups Onion\s
+                1 cups Tomato\s
+                2 sticks Green Chili\s
+                0.25 tsp Ginger Garlic Paste\s
+                0.25 cups Mint leaves\s
+                1 tbsp Coriander Leaves\s
+                0.25 tsp Fennel Seeds\s
+                1 dashes Salt\s
+                Sautee and Grind
+                0.5 cups Onion\s
+                0.5 cups Tomato\s
+                2 tsp Grated Coconut\s
+                0.25 tsp Poppy Seeds\s
+                2 sticks Cardamom Pods\s
+                1 sticks Cloves\s
+                0.25 tsp Turmeric Powder\s
+                1.5 tsp Coriander Powder\s
+                0.75 tsp Red Chili Powder\s
+                0.25 tsp Fennel Seeds\s
+                4 sticks Peppercorns\s
+                2 tbsp Cooking Oil \s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash the potatoes and cut them into small block-sized pieces. Thaw the mixed veggies if using frozen ones.
+                Step 2
+                Heat a pan and add oil. Once heated up, add cardamom, cloves, cinnamon, peppercorns, and fennel. Roast them until golden brown and set aside. Now add onions and tomatoes and saute' till they turn golden brown. Add the poppy seeds and coconut at the last followed by the spice powders. Fry for 3 mins and switch off the stove. Let them cool down.
+                Step 3
+                Grind the sauteed ingredients to a smooth paste. Heat the same pan and add oil to it. When it turns hot, add the fennel seeds and roast them. Add finely chopped onions and fry till they turn transparent. Now add tomatoes and saute' till they turn mushy.
+                Step 4
+                Add the grounded paste and fry for a minute. Now add the vegetables and add the required salt to taste.
+                Step 5
+                Add a cup of water and mix it well. Cover the pan with a lid and cook for about 8 - 10 mins or until the vegetables are cooked.
+                Step 6
+                Open the lid and you can see the oil layer floating above. Garnish with coriander and mint leaves. Serve hot with parotta.
+                """);
+    }
+    public static void cabbage_peas_poriyal(){
+        System.out.println("""
+                Ingredients
+                ------------
+                Main Ingredients
+                1 cups Finely chopped Cabbage \s
+                2 tsp Frozen Green peas\s
+                2 tbsp Grated Coconut \s
+                1 sticks Green chilli \s
+                1 sticks Garlic\s
+                1 dashes Salt\s
+                1 tbsp Coconut Oil \s
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds\s
+                0.25 tsp Urad Dal \s
+                1 sticks Red Chili \s
+                1 sticks Curry Leaves\s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash and finely chop the cabbage. Thaw the frozen green peas. Set it aside. In a mixie, grind the coconut, green chili, and garlic cloves.
+                Step 2
+                Heat a pan and add 2 tsp of oil to it. Once the oil is heated up, add the ingredients in the “To Temper ” field.
+                Step 3
+                Once they splutter, add the finely chopped cabbage and fry for 3 minutes. Add the frozen peas to it and saute it. Add required salt and cook them covered with a lid for another 4 mins in medium flame. Not need to add water. Cabbage will ooze out water.
+                Step 4
+                After it is cooked, add the grounded coconut-chili-garlic mixture to the cabbage and mix until the raw smell goes away.
+                Step 5
+                Add half tsp of coconut oil and switch off the flame. Goes well with any spicy kulambu varieties.
+                                
+                """);
+    }
+    public static void vazhaikkai_poriyal(){
+        System.out.println("""
+                Ingredients
+                ------------
+                Main Ingredients
+                1 cups Green Banana/ Vazhaikkai/Plantain \s
+                1 dashes Salt\s
+                0.25 tsp Turmeric Powder\s
+                To be Grounded
+                2 tbsp Grated Coconut \s
+                1 tsp Cumin seeds \s
+                2 sticks Red Chili\s
+                Tempering
+                0.25 tsp Mustard Seeds\s
+                0.25 tsp Urad Dal\s
+                1 sticks Curry Leaf\s
+                1 tsp Cooking Oil \s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash and peel the outer skin of the plantain. Cut the plantain into bite-size cubes and place them immersed in water.
+                Step 2       
+                Boil water in a pan and add the chopped plantain pieces along with the turmeric powder. Cover the lid and boil it for 10 mins until it is cooked. Drain the water and set the cooked vegetable aside.
+                Step 3      
+                In a mixer, add the grated coconut, cumin seeds, and red chili. coarsely grind them. Heat a pan with oil and once hot, add the “to temper” ingredients.
+                Step 4        
+                Once they start to splutter, add the grounded coconut- cumin paste. Sautee for a minute and add the cooked plantain. Add salt to taste and saute for 3 mins.
+                Step 5         
+                Transfer to a serving bowl and serve hot with any kulambu of your choice.
+                """);
+    }
+    public static void mor_kuzhambu(){
+        System.out.println("""
+                Ingredients
+                ------------
+                Main Ingredients
+                1 cups Yogurt/ Thick curd\s
+                0.25 tsp Turmeric powder\s
+                Tempering Ingredients
+                0.25 tsp Mustard seeds\s
+                0.25 tsp Urad dal \s
+                2 sticks Red chilli\s
+                1 sticks Curry Leaf\s
+                Grinding Ingredients
+                2 tbsp Grated Coconut\s
+                2 sticks Green Chili\s
+                0.5 tsp Jeera\s
+                0.75 tsp Channa dal/ kadalai paruppu\s
+                0.25 tsp Coriander seeds\s
+                2 sticks Garlic Cloves\s
+                
+                Instructions
+                ------------
+                Step 1
+                In a mixing bowl, add 2 cups of curd and whisk together. Add salt, turmeric powder and set aside.
+                Step 2
+                In a mixer jar, add the ingredients listed in the “to grind” table and grind them to a smooth paste.
+                Step 3
+                Add the grounded paste to the curd and mix together. Place a pan in the stove and add the morkulambu mixture and cook them in a medium flame.
+                Step 4
+                Heat them and do not allow them to boil, After about 5 – 6 mins when they begin to smoke, switch off the flame and transfer to a serving dish.
+                Step 5
+                Heat a small pan and add a tsp of oil. Once they shimmer, add mustard seeds, red chili, curry leaves and switch off the flame. Before adding to the mor kulambu, add the asafoetida in the oil and pour them to the kulambu.
+                Step 6
+                You can add any vegetables like cooked ash gourd, chayote, boiled taro root, sauteed okra, to the mor kulambu. I added urad dal vada to it at the time of serving. Serve hot with rice and vegetables.
+                """);
+    }
+    public static void jeera_rice(){
+        System.out.println("""
+                
+                """);
+    }
+    public static void surakai_kootu(){
+        System.out.println("""
+                Ingredients
+                ------------
+                Main Ingredients
+                1 sticks Bottle Gourd / Lauki/ Surakkai\s
+                2 tbsp Moong dal\s
+                1 dashes Salt\s
+                To Grind
+                2 tbsp Grated Coconut\s
+                1 sticks Green Chilli\s
+                0.5 tsp Cumin Seeds\s
+                0.5 tsp Rice Flour\s
+                Tempering
+                1 tsp Cooking Oil \s
+                0.25 tsp Mustard seeds\s
+                0.25 tsp Urad dal\s
+                2 tsp Small Onions \s
+                1 sticks Curry Leaves\s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash and Peel the skin of bottle gourd. Chop them into cubes and set aside.
+                Step 2
+                Wash moong dal and add the chopped bottle gourd pieces to it. Add half a teaspoon of turmeric powder to it. Pressure cook them for two whistles and switch off the flame.
+                Step 3
+                Meanwhile, in a mixer, add coconut, green chili, jeera, rice flour and ground them to a fine paste.
+                Step 4
+                Once the pressure is done, add the grounded coconut paste to it. Add required salt and allow it to boil.
+                Step 5
+                Cook them for 4- 5 mins, until the rawness goes away and the bottle gourd- moong dal comes to a thicker consistency.
+                Step 6
+                Transfer to a serving dish. Heat a small pan and add a tsp of oil to it. Once they shimmer, add mustard seeds and urad dal, followed by finely chopped small onions and curry leaves.
+                Step 7
+                Fry till they are golden brown and add them to the bottle gourd kootu. Serve them hot with rice and vathal kulambu. It can be had as such with ghee and rice too.
+                """);
+    }
+    public static void quinoa_bisibelabath(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 cups Quinoa\s
+                0.25 cups Toor Dal\s
+                4 tbsp Thick Tamarind Juice\s
+                0.25 tsp Turmeric Powder\s
+                0.25 cups Small Onions/ Shallots\s
+                1 sticks Carrot\s
+                1 tbsp Green peas\s
+                1 sticks Curry Leaves\s
+                3 tbsp Cooking Oil \s
+                1 dashes Salt\s
+                Roast and Grind
+                1 tsp Chana Dal \s
+                1 tsp Urad Dal\s
+                1 tsp Coriander Seeds\s
+                4 sticks Red Chili\s
+                0.25 tsp Fenugreek seeds\s
+                0.25 tsp Jeera Seeds\s
+                0.25 sticks Cinnamon\s
+                0.25 sticks Poppy Seeds/ Khas-Khas\s
+                2 sticks Cloves\s
+                2 tsp Dry coconut / copara (Replace with dry roasted Fresh coconut )
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds \s
+                0.25 tsp Urad Dal \s
+                0.25 tsp Chana Dal\s
+                1 tsp Cashews\s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash and pressure cook the toor dal separately for 3 whistles. Meanwhile, wash the Quinoa and cook them for 20 minutes in a covered pot. Soak tamarind in hot water and extract the pulp from it.
+                Step 2
+                Meanwhile, heat a pan and roast the ingredients in the “To roast and Grind” table with a teaspoon of oil. Roast them one by one and transfer to a plate for cooling down. Roast the dry coconut/ copara in a medium flame lastly.
+                Step 3
+                Once the spices/ dal cool down, grind them in a mixer to a fine powder. Chop the carrots into chunks and peel the small onions.
+                Step 4
+                In a wide pan, heat oil and temper with mustard seeds, urad, and channa dal, Red chili and curry leaves. Wait until they splutter. Add the onions, carrot cubes, and green peas to it and saute for a couple of minutes.
+                Step 5
+                Add the tamarind pulp, turmeric powder, salt and allow it to boil until the vegetables are done. Meanwhile, mix together the boiled toor dal along with cooked Quinoa.
+                Step 6
+                When the vegetables are done, add the dal + Quinoa mix and allow it to cook for another 10 minutes until the rawness goes off and the bisibelabath reaches its consistency. It is fine if it is a bit of loose consistency. As it gets cool down, it will solidify.
+                Step 7
+                Garnish them with roasted cashews. Serve hot with potato chips, vadams. They taste great when had hot.
+                """);
+    }
+    public static void paruppu_podi(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 cups Toor Dhal\s
+                1 cups Moong Dhal\s
+                0.25 cups Roasted bengal gram/pottukadalai \s
+                2 sticks Garlic flakes\s
+                0.25 tsp Jeera seeds\s
+                2 dashes Salt\s
+                1 pinches Pepper Corns\s
+                
+                Instructions
+                ------------
+                Step 1
+                Measure one cup of toor dhal, moong dhal, and half a cup of roasted Bengal gram. Heat a heavy-bottomed pan and dry roast each of them separately in a medium flame.
+                Step 2
+                Roast until they turn golden brown in color continuously. Repeat the same step for all the dals.
+                Step 3
+                Switch off the stove and add the jeera and peppercorns to it along with garlic flakes. Let them be roasted in the remaining heat. Transfer them to a plate.
+                Step 4
+                Allow them to cool down completely. In a mixer jar, add the roasted dals first and coarsely grind them. Now add the jeera, pepper, and garlic flakes and grind them until they come to a fine Rava consistency.
+                Step 5
+                Add required salt and mix. Transfer to a airtight box and serve with hot rice and ghee.
+                """);
+    }
+    public static void thuvaram_paruppu_sadam(){
+        System.out.println("""
+                Ingredients
+                ------------
+                Main Ingredients
+                 cups Sona Masoori Rice or Raw Rice\s
+                0.25 cups Toor Dal\s
+                To Grind
+                0.5 cups Pearl Onions (Peeled)
+                0.25 cups Garlic Cloves (Peeled)
+                0.5 tsp Turmeric Powder\s
+                0.5 tsp Asafetida\s
+                1 sticks Curry Leaves\s
+                4  Vadagam\s
+                1  Salt (to taste)
+                1  Oil (as needed)
+                To Grind
+                0.25 cups Cocunut\s
+                8  Red Chilli\s
+                0.5 tsp Jeera Seeds\s
+                4  Pearl Onions\s
+                
+                Instructions
+                ------------
+                Step 1
+                Measure the rice and dal together and wash them three times and set aside. Peel the pearl onions and garlic and set them aside.
+                Step 2
+                Heat a heavy-bottomed pressure cooker and add rice+dal. Measure about two and a half cups of water and allow it to cook.
+                Step 3
+                In a mixer, add grated coconut, red chilies, jeera seeds, and a couple of pearl onions. Grind them to a smooth paste.
+                Step 4
+                Add half a teaspoon of turmeric powder to the rice mix. While the rice is half cooked, add the ground paste, peeled pearl onions, and garlic, along with a generous amount of asafetida powder.
+                Step 5
+                Cover the pressure cooker and cook for three whistles. Switch off the stove and allow it to cool down.
+                Step 6
+                Open the lid and turn them over uniformly. Heat a pan with oil. Once they shimmer, add the onion vadagams and curry leaves. Wait until they splutter and Pour them over the cooked rice.
+                Step 7
+                Mix and serve with poppadoms, raita, or chips.
+                """);
+    }
+    public static void andhra_puliogare(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 cups Cooked Rice\s
+                1 tbsp Tamarind pulp/ paste\s
+                2 sticks Red chilli \s
+                2 sticks Green chilli\s
+                0.5 sticks Ginger\s
+                1 sticks Curry leaves\s
+                0.25 tsp Turmeric powder \s
+                0.5 tsp Asafoetida powder\s
+                1 tsp Peanuts\s
+                1 tsp Cashews\s
+                0.25  Mustard seeds\s
+                0.25  Urad dal\s
+                0.5  Channa Dal \s
+                2  Salt\s
+                2  Gingelly Oil\s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash and pressure rice for three whistles. Allow the rice to cool down by spreading on a plate.
+                Step 2
+                In a Kadai, add oil and roast peanuts, cashews. set them aside. Slit the green chili lengthwise and chop the ginger finely.
+                Step 3
+                In the same Kadai, add oil and once it shimmers, add mustard seeds, Urad dal, red chilli, slit green chillies, ginger and curry leaves.
+                Step 4
+                Extract a thick pulp from tamarind and add it to the Kadai. Simmer the stove and allow it to boil. Add turmeric powder, asafoetida, and required salt to taste.
+                Step 5
+                Allow it to simmer for 5 – 7 mins. When it comes to a semi- paste consistency, add the cooked rice and switch off the stove
+                Step 6
+                Mix thoroughly for uniformity and add the roasted cashews and peanuts. Enjoy with any spicy curry for choice. I paired them up with sweet potato masala Roast.
+                """);
+    }
+    public static void milagu_kulambu(){
+        System.out.println("""
+                Ingredients
+                ------------
+                0.5 cups Garlic Cloves\s
+                0.25 cups Small onions \s
+                4 fl oz Tamarind Juice\s
+                0.25 tsp Turmeric powder \s
+                0.5 tsp Jaggery\s
+                Tempering Ingredients
+                0.25 tsp Mustard seeds \s
+                0.25 tsp Urad Dal \s
+                1 sticks Curry Leaf\s
+                0.25 tsp Fenugreek Seeds/ Vendhayam\s
+                2 tbsp Gingelly Oil\s
+                Roast and Grind
+                1 tsp Pepper\s
+                0.5 tsp Urad Dal \s
+                0.5 tsp Channa Dal \s
+                1 sticks Curry Leaves\s
+                1 sticks Red Chili \s
+                
+                Instructions
+                ------------
+                Step 1         
+                Soak the tamarind in hot water and leave aside. Heat a pan and drizzle a tsp of oil to it. Roast the ingredients in the “To roast and grind” column to golden brown color. Grind them to a fine paste with little water and set them aside.
+                Step 2     
+                Peel off the skin from garlic and small onions and set aside. Heat the pan and add sesame oil to it. Once they shimmer, add mustard seeds along with a spring of curry leaf and allow it to splutter.
+                Step 3       
+                Now add the peeled garlic and small onions to it and saute until they are golden brown. Add the grounded pepper paste to it. Fry until the raw smell of it goes off. This would take at least 2 – 3 mins.
+                Step 4             
+                Extract thick tamarind juice from the soaked tamarind and add to the cooked pepper paste. Add turmeric powder and required salt to taste.
+                Step 5        
+                Allow 5 – 7 mins for it to boil and thicken. Now add a piece of jaggery and let it roll boil another 2 mins to thicken. Switch off the stove when you see a layer of sesame oil that oozes off from the kulambu. Serve them with hot rice, ghee, and any mild kootu/poriyal.
+                """);
+    }
+    public static void vegetable_pulao(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 cups Basmati Rice\s
+                0.75 cups Frozen veggies (Replace with fresh Carrots, Beans , Sweet Cornand Peas)
+                1 sticks Onion\s
+                2 sticks Green Chili\s
+                0.5 tsp Ginger- Garlic Paste\s
+                1 sticks Cinnamon Stick \s
+                2 sticks Cloves\s
+                2 sticks Cardamom\s
+                1 sticks Bay Leaf\s
+                2 tsp Salt\s
+                1 tsp Ghee\s
+                2 tsp Cooking Oil\s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash and soak the basmati rice for 20 mins. Thaw the frozen veggies. Slit the green chilies and cut onion lengthwise.
+                Step 2
+                Heat a pan and drizzle ghee to it. Strain water from the soaked rice and roast the rice for a minute or two. Set it aside.
+                Step 3
+                In the pressure cooker, add the oil. Wait until they turn hot. Add cardamom, cloves, cinnamon stick, and bay leaf. Wait until they are roasted.
+                Step 4
+                Add the onion and green chili. Saute' until they turn pink in color. Add a tsp of freshly grounded ginger-garlic paste to it. Fry until the raw smell of it goes off.
+                Step 5
+                To the sauteed onions, add the thawed frozen vegetables to it. Combine together until they are coated with the other ingredients.
+                Step 6
+                To this, add the roasted basmati rice and garam masala powder. Fold ingredients together. Measure 1.5 cups of water to it.
+                Step 7
+                Add salt to taste and mix. Cover the pressure cooker with its lid and put on the weights. Allow it to cook until two whistles and put the stove's flame to sim for five mins.
+                Step 8
+                After five mins, switch off the stove and release the pressure in 5 mins. Fluff it off with a fork and transfer to a serving bowl. Serve hot with kurma or raitha of your choice.
+                """);
+    }
+    public static void vazhaikkai_kola_urundai(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 sticks Plantain/ Raw banana/ Vazhaikkai \s
+                3 tbsp Onion\s
+                1 dashes Salt\s
+                1 cups Cooking Oil (For Deep Frying)
+                Dry Grind
+                0.5 cups Fried Gram/ Pottukadalai \s
+                Wet Grind
+                0.25 cups Grated coconut\s
+                1 sticks Green chilli\s
+                0.5 sticks Ginger\s
+                4 sticks Garlic CLoves\s
+                2 sticks Cloves\s
+                1 sticks Cardamom\s
+                0.25 tsp Fennel seeds\s
+                0.25 tsp Poppy seeds\s
+                0.5 tsp Coriander powder\s
+                0.5 tsp Red Chili Powder\s
+                1 sticks Curry Leaves\s
+                1 tsp Chopped Coriander Leaves\s
+                
+                Instructions
+                ------------
+                Step 1
+                In a pressure cooker, place the raw banana and cook for one whistle. Instead, you can cut them into half and cook in water in a covered pot until they are soft.
+                Step 2
+                Remove the raw banana and allow them to come to room temperature. Peel off the skin and chop roughly. Set this aside.
+                Step 3
+                In a dry mixer jar, finely ground the fried gram dal into a powder. Set this aside.
+                Step 4
+                In the same jar, add all the ingredients under the wet ingredients column and finely grind them. Lastly, add the roughly chopped raw banana and pulse them for 2 – 3 times.
+                Step 5
+                Transfer to a wide bowl and add powdered fried gram dal powder, salt, and a tsp of oil. Combine them together.
+                Step 6
+                Grease your palm with oil and make small balls out of this mixture. It will be sticky a bit, however, grease your palm regularly.
+                Step 7
+                Place these balls in the refrigerator until you need them to fry. When you are ready to deep fry, heat oil in a pan and gently drop the balls to the oil. Deep fry them in a medium flame and drain on a paper towel. Serve hot with rice as an accompaniment.
+                                
+                """);
+    }
+    public static void brinji_rice(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 cups Basmati Rice  (Replace with any long grain rice)
+                0.25  cups Onions (Cut Length wise)
+                3 sticks Green Chilli  (Cut Length wise)
+                1 tsp Ginger - Garlic Paste\s
+                1 cups Mint leaves/Pudhina (Loosely Packed)
+                5 sticks Cashews\s
+                2 sticks Green Cardamom\s
+                1 sticks Cloves\s
+                1 sticks Cinnamon \s
+                2 tbsp Ghee\s
+                2 tbsp Oil \s
+                2 dashes Salt\s
+                
+                Instructions
+                ------------
+                Step 1
+                Measure a cup of basmati rice, wash and soak in water for 20 mins. Meanwhile, chop onions lengthwise and slit green chili lengthwise.
+                Step 2
+                Drain the water after 30 mins and set aside. Heat a thick-bottomed pressure cooker and add ghee/oil. Once the mixture becomes hot, roast the cashews till golden brown and remove from the oil.
+                Step 3
+                In the same oil, add the cardamom, cloves, cinnamon, and wait till it gets roasted. Add the onions and green chili and saute till golden brown.
+                Step 4
+                Add in the ginger-garlic paste and cleaned mint leaves to this and saute for a minute. Add the drained rice and mix up gently without breaking the grains.
+                Step 5
+                Mix the required salt and add one cup of water to this. Cover the pressure cooker with the lid and place the weight. Allow two whistles and switch off the stove.
+                Step 6
+                Release pressure after 5 mins and open lid. Fluff the cooked rice off with a fork and add roasted cashew. Serve hot.
+                """);
+    }
+    public static void kadhamba_sadham(){
+        System.out.println("""
+                Ingredients
+                ------------
+                Main Ingredients
+                0.75 cups Rice \s
+                0.25 cups Toor Dal \s
+                0.25 tsp Turmeric Powder \s
+                1 cups Tamarind juice \s
+                1 dashes Salt \s
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds\s
+                0.25 tsp Urad Dal\s
+                1 sticks Red Chilli\s
+                1 sticks Curry Leaf\s
+                0.25 tsp Asafoetida powder \s
+                2 tbsp Oil \s
+                Roast and Grind
+                1 tbsp Coriander Seeds \s
+                4 sticks Red Chilli \s
+                1 tbsp Grated Coconut \s
+                1 tsp Toor Dal \s
+                1 tsp Channa Dal \s
+                1 tsp Urad Dal\s
+                7 sticks Pepper corns \s
+                0.25 tsp Fenugreek Seeds \s
+                0.25 tsp Jeera Seeds \s
+                Vegetables used
+                1 sticks Drumstick \s
+                0.25 cups Yellow Pumpkin\s
+                0.25 cups Carrot \s
+                0.25 cups Long Beans \s
+                0.25 cups Brinjal \s
+                1 sticks Tomato \s
+                
+                Instructions
+                ------------
+                Step 1   
+                Heat a pan and add a teaspoon of Oil to it. Once hot, add all the ingredients under the "Roast and Grind" section each and roast until they turn golden brown. Finally add the grated coconut and make them to a fine paste in a mixer jar.
+                Step 2     
+                Meanwhile, pressure cook the rice and toor dal for 3-4 whistles until they are soft and mushy.
+                Step 3           
+                In a heavy bottomed pan, add a teaspoon of oil and sautee the vegetables. Add quarter teaspoon of turmeric powder
+                Step 4           
+                Add the grounded masala paste and sautee until they coat the vegetables. Add one cup of tamarind juice to it. Let them boil.
+                Step 5           
+                Add the mashed rice and dal to the masala and let it cook covered for 10 mins in medium flame.
+                Step 6           
+                Heat a small pan and add oil to it. Once it gets hot, add mustard seeds, Urad Dal, Red Chilli and Curry leaves to it. Let them splutter.
+                Step 7          
+                Add Asafoetida Powder and switch off the stove. Transfer the tempering to the rice and serve hot.
+                """);
+    }
+    public static void instant_garlic_pickle(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 cups Garlic Cloves\s
+                0.5 cups Thick Tamarind Juice \s
+                1 dashes Salt\s
+                0.25 tsp Turmeric Powder \s
+                1 tsp Red Chilli Powder \s
+                0.25 tsp Asafoetida Powder \s
+                0.25 sticks Jaggery \s
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds \s
+                0.25 tsp Fenugreek Seeds \s
+                3 tbsp Gingelly Oil \s
+                
+                Instructions
+                ------------
+                Step 1          
+                Heat a pan and add gingelly oil to it. Once it turns hot, add mustard seeds followed by fenugreek seeds. Let it get roasted.
+                Step 2     
+                Add one cup of peeled and washed garlic cloves to the oil. Sautee them until you see golden spots on the garlic.
+                Step 3          
+                Add half a cup of tamarind juice to the sauteed garlic along with a quarter teaspoon of turmeric powder and a teaspoon of red chilli powder. Let it cook for about 7 - 8 mins until the garlic is half cooked.
+                Step 4               
+                Coarsely grind about 10 garlic cloves separately without adding water.
+                Step 5          
+                Add the grounded garlic and give a quick stir. Cook for another 4 mins until the raw, pungent smell goes off.
+                Step 6           
+                Finally, add a small piece of jaggery to the garlic pickle and give a quick stir. Let it cool down and then store them in a glass bottle.
+                """);
+    }
+}
+import java.util.Scanner;
+
+public class Dinner {
+    public static void dish() {
+        Scanner obj=new Scanner(System.in);
+        System.out.print("""
+                1) Aloo Gobi Matar
+                2) Mixed Vegetable Salna
+                3) Paneer Tikka Masala
+                4) Potato- Green Peas curry
+                5) Karthigai Adai
+                6) Sweet Corn Masala
+                7) Paneer curry
+                8) Masala Puri
+                9) Thayir Idli
+                10) Wheat Idiyappam
+                11) Set Dosa
+                12) Thengai Podi
+                13) Aapam
+                14) Kanchipuram Idli
+                15) Mushroom Pepper Masala
+                16) SPINACH RAITHA
+                17) Srilankan Manipittu
+                18) Tirunelveli Idli Molagai Podi
+                19) BUN DOSAI
+                20) Methi Dal Tadka
+                """);
+        System.out.print("enter your dish number :");
+        int dn = obj.nextInt();
+        System.out.println("***************************************************************************************************************************************************");
+        if (dn == 1)
+            Dinner.aloo_gobi_matar();
+        else if (dn == 2) {
+            Dinner.mixed_vegetable_salna();
+        } else if (dn == 3) {
+            Dinner.paneer_tikka_masalavoid();
+        } else if (dn == 4) {
+            Dinner.potato_green_peas_curry();
+        } else if (dn == 5) {
+            Dinner.karthigai_adai();
+        } else if (dn == 6) {
+            Dinner.sweet_corn_masala();
+        } else if (dn == 7) {
+            Dinner.paneer_curry();
+        } else if (dn == 8) {
+            Dinner.masala_puri();
+        } else if (dn == 9) {
+            Dinner.thayir_idli();
+        } else if (dn == 10) {
+            Dinner.wheat_idiyappam();
+        } else if (dn == 11) {
+            Dinner.set_dosa();
+        } else if (dn == 12) {
+            Dinner.thengai_podi();
+        } else if (dn == 13) {
+            Dinner.aapam();
+        } else if (dn == 14) {
+            Dinner.kanchipuram_idli();
+        } else if (dn == 15) {
+            Dinner.mushroom_pepper_masala();
+        } else if (dn == 16) {
+            Dinner.spinach_raitha();
+        } else if (dn == 17) {
+            Dinner.srilankan_manipittu();
+        } else if (dn == 18) {
+            Dinner.tirunelveli_idli_molagai_podi();
+        } else if (dn == 19) {
+            Dinner.bun_dosai();
+        } else if (dn == 20) {
+            Dinner.methi_dal_tadka();
+        } else {
+            System.out.println("no dish found");
+        }
+        System.out.println("***************************************************************************************************************************************************");
+    }
+    public static void aloo_gobi_matar(){
+        System.out.println("""
+                Ingredients
+                0/14 Ingredients
+                Adjust Servings\s
+                6
+                1 cups Potatoes\s
+                Main Ingredients
+                0.5 cups Cauliflower florets\s
+                0.25 cups Frozen Green Peas\s
+                2 sticks Green Chilli \s
+                0.5 tsp Ginger- Garlic Paste\s
+                1.5 tsp Coriander Powder\s
+                0.5 tsp Red Chili Powder\s
+                0.25 tsp Turmeric Powder\s
+                0.25 tsp Garam Masala Powder\s
+                1 dashes Salt\s
+                2 tsp Coriander leaves\s
+                Tempering
+                0.25 tsp Fennel Seeds\s
+                1 sticks Cinnamon \s
+                2 tbsp Cooking Oil \s
+                Instructions
+                0/5 Instructions
+                Step 1
+                Peel the skin of potatoes and chop them into cubes. Clean the cauliflower to small florets and immerse them in saltwater to remove dirt.
+                Step 2
+                I used frozen green peas, so I thawed them in the microwave for a minute. Slice onion and green chili to lengthwise.
+                Step 3
+                Heat a pan and add oil. Once hot, add fennel seeds followed by a cinnamon stick. Once it splutters, add onion and green chili. Saute till they are pinkish. Add ginger-garlic paste and fry till the raw smell goes off. Now add all the spice powders one by one.
+                Step 4
+                Drain gobi from water and add them to the pan along with cubed potatoes. Sprinkle water and cook for 7 – 8 mins with a lid covered. Open and check the curry. It will be almost cooked. Now add thawed peas and mix thoroughly along with required salt, keeping the stove’s flame in medium.
+                Step 5
+                Generously sprinkle coriander leaves and serve hot with any rice /phulka.
+                """);
+    }
+    public static void mixed_vegetable_salna
+            (){
+        System.out.println("""
+                Ingredients
+                0/21 Ingredients
+                Adjust Servings\s
+                8
+                Main Ingredients
+                2 cups Mixed Vegetables ((Carrot, Peas, Green Peas, potato and Corn) )
+                0.5 cups Onion\s
+                1 cups Tomato\s
+                2 sticks Green Chili\s
+                0.25 tsp Ginger Garlic Paste\s
+                0.25 cups Mint leaves\s
+                1 tbsp Coriander Leaves\s
+                0.25 tsp Fennel Seeds\s
+                1 dashes Salt\s
+                Sautee and Grind
+                0.5 cups Onion\s
+                0.5 cups Tomato\s
+                2 tsp Grated Coconut\s
+                0.25 tsp Poppy Seeds\s
+                2 sticks Cardamom Pods\s
+                1 sticks Cloves\s
+                0.25 tsp Turmeric Powder\s
+                1.5 tsp Coriander Powder\s
+                0.75 tsp Red Chili Powder\s
+                0.25 tsp Fennel Seeds\s
+                4 sticks Peppercorns\s
+                2 tbsp Cooking Oil \s
+                Instructions
+                0/6 Instructions
+                Step 1
+                Wash the potatoes and cut them into small block-sized pieces. Thaw the mixed veggies if using frozen ones.
+                Step 2
+                Heat a pan and add oil. Once heated up, add cardamom, cloves, cinnamon, peppercorns, and fennel. Roast them until golden brown and set aside. Now add onions and tomatoes and saute' till they turn golden brown. Add the poppy seeds and coconut at the last followed by the spice powders. Fry for 3 mins and switch off the stove. Let them cool down.
+                Step 3
+                Grind the sauteed ingredients to a smooth paste. Heat the same pan and add oil to it. When it turns hot, add the fennel seeds and roast them. Add finely chopped onions and fry till they turn transparent. Now add tomatoes and saute' till they turn mushy.
+                Step 4
+                Add the grounded paste and fry for a minute. Now add the vegetables and add the required salt to taste.
+                Step 5
+                Add a cup of water and mix it well. Cover the pan with a lid and cook for about 8 - 10 mins or until the vegetables are cooked.
+                Step 6
+                Open the lid and you can see the oil layer floating above. Garnish with coriander and mint leaves. Serve hot with parotta.
+                """);
+    }
+    public static void paneer_tikka_masalavoid(){
+        System.out.println("""
+                Ingredients
+                0/19 Ingredients
+                Adjust Servings\s
+                6
+                1 cups Paneer cubes\s
+                1 dashes Salt \s
+                Main Ingredients
+                2 tbsp Cooking Oil\s
+                1 tbsp Coriander Leaves\s
+                Marinade Ingredients
+                3 tsp Hung curd (Replace with Sour cream)
+                0.25 tsp Ginger Garlic Paste\s
+                1 tsp Coriander Powder\s
+                0.5 tsp Red Chili Powder\s
+                0.25 tsp Turmeric Powder\s
+                0.25 tsp Garam Masala Powder\s
+                Tikka Masala Ingredients
+                1 cups Onion (Fine Chopped)
+                1.25 cups Tomato (Fine Chopped)
+                1 tsp Tomato paste\s
+                1.5 tsp Coriander Powder\s
+                1 tsp Red Chili Powder\s
+                0.25 tsp Garam Masala powder\s
+                0.25 tsp Jeera Seeds\s
+                0.25 tsp Kasoori Methi leaves\s
+                1 tsp Cooking Cream\s
+                Instructions
+                0/7 Instructions
+                Marinating the Paneer
+                Step 1
+                If you are using homemade yogurt, drain them on to a muslin cloth and hang them to drain off water content in it. After about 30 mins, you can find a thick cheese-like curd collected in the muslin cloth. This is hung curd.
+                Step 2
+                In a bowl add the hung curd, G&G paste, red chili powder, turmeric, coriander, and garam masala powder. Sprinkle salt and mix them thoroughly. Add Paneer cubes to it for marination and set them aside for about 30 mins minimum to even overnight in the refrigerator.
+                Step 3
+                I marinated for about an hour. After this, heat a dosa pan and drizzle oil all over. Gently place each of the marinated cubes to the Tawa. Flip over after 2 mins and cook until done. Set aside.
+                Preparing the Tikka Masala gravy
+                Step 4
+                Fine chop onions and tomatoes. Heat a pan and add oil to it. Once they shimmer, add jeera seeds, followed by onions. Saute them until they turn pink. Add a spoon of ginger-garlic paste, until the raw smell goes off.
+                Step 5
+                Add tomatoes to it and saute till they are cooked. Add the tomato puree to it and keep stirring. To this gravy add all the masala powders – Coriander, Red chili, Garam Masala powder, and a cup of water.
+                Step 6
+                Keep the flame low and cook for about 6 mins until the oil is separated from it. Add salt to it and mix. Transfer the grilled paneer cubes to it and combine them together.
+                Step 7
+                Add a tsp of cream to it and mix them. Switch off the flame. Rub a pinch of kasoori methi between the palms and add them to the tikka masala. Garnish with coriander leaves and serve hot with phulka or rice.
+                """);
+    }
+    public static void potato_green_peas_curry(){
+        System.out.println("""
+                Ingredients
+                0/13 Ingredients
+                Adjust Servings\s
+                5
+                Main Ingredients
+                3 sticks Potatoes\s
+                0.25 cups Peas\s
+                2 sticks Tomato\s
+                0.25 tsp Jeera seeds\s
+                2 tbsp Cooking Oil\s
+                Grinding Ingredients
+                1.5 cups Coriander leaves\s
+                0.5 cups Onion\s
+                1 tsp Coriander powder \s
+                0.5 tsp Red Chilli powder\s
+                0.25 tsp Turmeric powder\s
+                0.5 tsp Garam Masala powder\s
+                2 tsp Cooking Oil\s
+                2 dashes Salt\s
+                Instructions
+                0/6 Instructions
+                Step 1
+                                
+                Boil potatoes in a pressure cooker. Allow it to cool down and peel the skin. Crumble them into pieces roughly. Set them aside. Pressure Cook the green peas separately and set them aside too. Clean the coriander leaves removing the roots and wash them.
+                Step 2
+                                
+                In a mixer, add the coriander leaves, roughly chopped onion, turmeric powder, red chili powder, garam masala powder, sugar, and salt. Grind them to a fine paste.
+                Step 3
+                                
+                Boil the tomatoes and grind them to a fine paste separately.
+                Step 4
+                                
+                Heat a pan and add oil to it. Once its hot, add some jeera seeds. When they are roasted, add the grounded coriander – onion paste to it.
+                Step 5
+                                
+                Cook until the rawness goes off for about 2 – 3 mins. Add the grounded tomato paste now. Cook them together until oil separates from the masala.
+                Step 6
+                                
+                Add the cooked peas and crumbled potatoes to it. Add half a cup of water and cook until the gravy thickens. Remove from fire once they thicken. Garnish with coriander leaves and serve with phulka or rice of your choice.
+                """);
+    }
+    public static void karthigai_adai(){
+        System.out.println("""
+                Ingredients
+                0/11 Ingredients
+                Adjust Servings\s
+                6
+                1 cups Idli Rice \s
+                0.5 cups Raw rice| pacharisi\s
+                0.5 cups Urad Dal\s
+                2 tbsp Toor dal \s
+                2 tbsp Channa Dal \s
+                2 tsp Pepper corns\s
+                1 tsp Jeera\s
+                1 sticks Curry leaf\s
+                3 tsp Grated Coconut\s
+                1 tsp Salt\s
+                2 tbsp Gingelly Oil\s
+                Instructions
+                0/5 Instructions
+                Step 1
+                Soak the raw rice, idli rice along with the dals for about 2-3 hrs. One they are soaked, drain excess water and grind them into a batter consistency by adding little by little water.
+                Step 2
+                Once they are ground, transfer to a bowl and add salt, grated coconut, curry leaves.
+                Step 3
+                In a mortar and pestle, crush the jeera and peppercorns coarsely. Add them to the adai batter and mix well to combine.
+                Step 4
+                Heat a Tawa and pour a ladle of the adai batter and swirl in a circular motion. Drizzle sesame oil for extra flavor and flip over to the other side after one minute.
+                Step 5
+                Once the other side is also done, transfer to a plate and serve with a dollop of butter and jaggery piece.
+                """);
+    }
+    public static void sweet_corn_masala(){
+        System.out.println("""
+                Ingredients
+                0/19 Ingredients
+                Adjust Servings\s
+                6
+                Main Ingredients
+                1.5 cups Frozen Sweetcorn kernels\s
+                0.25 tsp Cumin seeds\s
+                1 tsp Coriander Powder\s
+                0.5 tsp Red Chili Powder\s
+                0.25 tsp Turmeric powder\s
+                0.25 tsp Garam Masala Powder\s
+                1 tsp Coriander leaves\s
+                1 dashes Kasoori Methi\s
+                1 tbsp Lemon juice\s
+                2 tbsp Cooking Oil \s
+                1 dashes Salt \s
+                Sautee and Grind
+                0.25 cups Onion\s
+                0.5 cups Tomato\s
+                1 sticks Ginger \s
+                3 sticks Green Chilli\s
+                0.25 cups Grated Coconut\s
+                3 sticks Almonds \s
+                5 sticks Pepper corns\s
+                0.25 tsp Fennel seeds\s
+                Instructions
+                0/6 Instructions
+                Step 1
+                Cut onions and tomatoes into rough cubes. Heat a pan and drizzle oil in it. Add the green chili, ginger pieces, black peppercorns, and fennel seeds. Fry them until golden brown.
+                Step 2
+                Add almonds and toss a while. Switch off the stove and add grated coconut to it. Let it remain in that heat itself.
+                Step 3
+                Once they come to room temperature, make them into a fine paste in a mixer jar. Set them aside.
+                Step 4
+                Heat the same pan and drizzle oil. Once they shimmer, add cumin seeds and wait until they roast. Add the grounded masala paste. Saute them for a minute. Add coriander powder, turmeric powder, red chili powder, and garam masala powder. Combine together.
+                Step 5
+                Meanwhile, measure one and a half cups of sweet corn and thaw it to room temperature. Add them to the half-cooked masala and salt to taste. Add half a cup of water to it and let it cook in medium-low flame for about 5 – 7 mins.
+                Step 6
+                Crush 1/4 tsp of kasoori methi in between the palms and add to the cooked curry. Switch off the stove. Garnish with coriander leaves and adjust sourness with lemon juice if you desire. Serve hot with any flatbreads of your choice.
+                """);
+    }
+    public static void paneer_curry(){
+        System.out.println("""
+                Ingredients
+                0/12 Ingredients
+                Adjust Servings\s
+                4
+                Main Ingredients
+                250 g Paneer\s
+                1 cups Tomato\s
+                4 sticks Cashews\s
+                1 tsp Grated Ginger\s
+                Seasoning
+                0.25 tsp Hing Powder\s
+                0.25 tsp Cumin seeds \s
+                0.25 tsp Turmeric Powder \s
+                2 tsp Coriander powder\s
+                0.25 tsp Garam masala\s
+                1 tsp Chilli powder \s
+                2 tbsp Oil\s
+                1 dashes Salt \s
+                Instructions
+                0/6 Instructions
+                Step 1
+                Cut the paneer into cubes and soak them into water. Soak the cashews in hot water for about half an hour. Chop the ginger into fine julienne.
+                Step 2
+                In a mixer, add roughly chopped tomatoes along with cashews and grind them to a fine paste.
+                Step 3
+                Heat oil in a pan and once it shimmers, add jeera followed by hing powder and ginger. Add Coriander powder, chili powder, and lastly turmeric powder. Roast them in the oil until aroma comes.
+                Step 4
+                Now add the grounded tomato- Cashew pastes without any water. Mix them thoroughly. Cover and cook for about 3 mins.
+                Step 5
+                Open the lid and add about half a cup of water and cook with the lid on for another three mins until the raw smell goes off.
+                Step 6
+                Now drain the paneer from the water and add it to the curry. Combine the paneer so as the masala gets coated to it. Cover with lid and cook for 2 mins. Now add garam masala powder to it and switch off the stove. You can see the colorful paneer curry ready in few mins. Serve it along with rotis or rice.
+                """);
+    }
+    public static void masala_puri(){
+        System.out.println("""
+                Ingredients
+                0/20 Ingredients
+                Adjust Servings\s
+                6
+                For the Peas Masala
+                1 cups Dry Green Peas\s
+                0.5 cups Chopped Onions\s
+                0.5  cups Chopped Tomatoes\s
+                1 sticks Ginger\s
+                3 sticks Garlic Cloves\s
+                0.25  tsp Jeera Seeds\s
+                0.25 tsp Fennel Seeds\s
+                1 tsp Coriander Powder\s
+                0.5 tsp Red chilli Powder\s
+                0.25 tsp Garam Masala Powder\s
+                0.25 tsp Amchur Powder\s
+                2 tbsp Cooking Oil \s
+                1 dashes Salt\s
+                For Assembling Masala Poori
+                20 sticks Chaat Puris\s
+                0.25 cups Chopped Onions \s
+                0.25 cups Chopped Tomatoes \s
+                2 tbsp Imli Chutney \s
+                2 tbsp Coriander Chutney \s
+                1 tsp Chaat Masala \s
+                2 tbsp Coriander Leaves\s
+                Instructions
+                0/7 Instructions
+                Step 1
+                                
+                Soak green peas for 8 hours. Wash and pressure cook for 4 whistles.
+                Step 2
+                                
+                In a pan add oil and temper with jeera seeds and Fennel seeds. Sautee onions, tomatoes, garlic, and ginger.
+                Step 3
+                                
+                Grind the sauteed onion and tomato to a fine paste.
+                Step 4
+                                
+                Add the grounded paste to the cooked peas.
+                Step 5
+                                
+                To the cooked peas add coriander powder, red chilli powder, garam masala powder and Amchur powder. Season with salt.
+                Step 6
+                                
+                Let it boil for about 5 mins until the rawness of the masala powders goes off. Switch off the stove.
+                Step 7
+                                
+                Place crushed chaat puris on a serving plate. Pour the cooked peas masala on top of the puris. Spread finely chopped onions, tomatoes to the top. Drizzle Imli chutney and green chutney. Top off with coriander leaves, a generous pinch of chaat masala, and sev. Serve immediately.
+                """);
+    }
+    public static void thayir_idli(){
+        System.out.println("""
+                Ingredients
+                0/9 Ingredients
+                Adjust Servings\s
+                1
+                2 cups Raw Rice \s
+                0.5 cups Urad Dal \s
+                1/3 cups Curd\s
+                0.25 tsp Jeera Seeds\s
+                0.25 tsp Freshly Crushed Pepper corns\s
+                1 dashes Salt \s
+                1 tsp Chana Dal ((Optional))
+                1 sticks Curry Leaf ((Optional) )
+                1 tsp Oil ((To grease Idli Plates) )
+                Instructions
+                0/7 Instructions
+                Step 1
+                                
+                Measure two cups of raw rice in a bowl. Add water and soak them for 5 hours.
+                Step 2
+                                
+                Measure half a cup of Urad dal and soak them for 3 hrs.
+                Step 3
+                                
+                Once it is soaked, drain water and grind the dal first and then rice. Transfer them to the bowl.
+                Step 4
+                                
+                Add a quarter teaspoon of jeera seeds, half a teaspoon of crushed pepper, one-third cup of curd, and salt to taste. Combine them with the batter and allow it to ferment for 8 hrs or overnight.
+                Step 5
+                                
+                Mix the fermented batter.
+                Step 6
+                                
+                Pour the batter into Idli molds. Steam the Idlis for 7- 8 mins until they are cooked.
+                Step 7
+                                
+                Thayir Idlis are ready.
+                """);
+    }
+    public static void wheat_idiyappam(){
+        System.out.println("""
+                Ingredients
+                0/5 Ingredients
+                Adjust Servings\s
+                4
+                1 cups Wheat Flour \s
+                1 cups Water\s
+                1 tsp Oil \s
+                1 pinches Salt \s
+                0.25  cups Grated Coconut \s
+                Instructions
+                0/5 Instructions
+                Step 1
+                                
+                Heat a heavy-bottomed pan and add one cup of wheat flour to it. Roast them on a medium flame until the aroma comes.
+                Step 2
+                                
+                Boil one cup of water in a saucepan. Add a pinch of salt and a teaspoon of oil. Let it come to the rolling boil stage. Switch it off.
+                Step 3
+                                
+                Add the hot water to the roasted flour in small quantities and keep folding the flour. Use a ladle to do this. Keep it covered for ten mins. Knead it to a smooth dough with hands.
+                Step 4
+                                
+                Use an Idiyappam mold in the press. Grease the press and place dough to it. Squeeze them to Idiyappam plates in a circular manner.
+                Step 5
+                                
+                Steam for five mins in Idli pot and serve with grated coconut and sugar/ jaggery.
+                """);
+    }
+    public static void set_dosa(){
+        System.out.println("""
+                Ingredients
+                0/7 Ingredients
+                Adjust Servings\s
+                6
+                1 cups Raw Rice \s
+                1 cups ParBoiled Rice \s
+                0.5 cups Urad dal \s
+                1 pinches Baking Soda \s
+                1 dashes Salt \s
+                2 tbsp Oil \s
+                1 pinches Orange Food Color ((Optional) )
+                Instructions
+                0/5 Instructions
+                Step 1
+                                
+                In a bowl, add one cup of raw rice, one cup of parboiled rice, and half a cup of urad dal. Add water and soak it for 6 - 8 hrs.
+                Step 2
+                                
+                Once it is soaked, wash and drain water. Add it to the wet grinder and grind it to a fine batter.
+                Step 3
+                                
+                Transfer it to a container. Add required amount of salt to taste. Mix them with the batter and allow it to ferment for 8 hrs or overnight.
+                Step 4
+                                
+                The batter would have fermented well. Mix the batter and add a pinch of baking soda. Mix the batter well and set aside.
+                Step 5
+                                
+                Heat a dosa pan and add a ladle of batter. spread it to a thick dosa and drizzle oil over it. Cover the dosa with a lid. Once it is cooked, do not flip. Serve with kurma.
+                """);
+    }
+    public static void thengai_podi(){
+        System.out.println("""
+                Ingredients
+                0/7 Ingredients
+                Adjust Servings\s
+                6
+                1 cups Grated Coconut \s
+                0.3  cups Urad Dal \s
+                0.25  cups Red Chilli \s
+                0.5 tsp Asafoetida Powder \s
+                1 dashes Salt \s
+                1 pinches Goose berry sized Tamarind \s
+                1 tbsp Sesame Oil \s
+                Instructions
+                0/6 Instructions
+                Step 1
+                                
+                Heat a pan and add a teaspoon of sesame oil. Roast 1/3rd cup of Urad Dal to a golden brown color. Set it aside and rost quarter cup of red chilli in the same pan.
+                Step 2
+                                
+                Add one cup of grated coconut and roast them on a low flame slowly. It should take about 8 - 10 mins to roast the coconut.
+                Step 3
+                                
+                Once it is golden brown, let it cool down for 10- 15 mins.
+                Step 4
+                                
+                In a mixer jar, grind urad dal and red chilli along with required salt.
+                Step 5
+                                
+                To the grounded dal and red chilli, add a small gooseberry sized tamarind and roasted coconut.
+                Step 6
+                                
+                Grind them to a powder and serve them with Idli or dosas.
+                """);
+    }
+    public static void aapam(){
+        System.out.println("""
+                Ingredients
+                0/6 Ingredients
+                Adjust Servings\s
+                15
+                Main Ingredients
+                1 cups Raw rice \s
+                1 cups Par Boiled rice or Sona Masoori rice\s
+                0.5 cups Urad Dal\s
+                0.25 tsp Fenugreek Seeds\s
+                0.25 cups Poha / Aval/ Flattened rice\s
+                2 dashes Salt\s
+                Instructions
+                0/7 Instructions
+                Step 1
+                                
+                In a wide bowl take one cup each of raw rice and boiled rice. Add half a cup of Urad dal and 1/4 tsp of fenugreek/methi seeds. Wash them thoroughly and soak them for about 6 hours.
+                Step 2
+                                
+                Wash and soak the poha/Aval for 2 hours separately in another bowl.
+                Step 3
+                                
+                After six hours, wash the rice- dal mixture three times and grind them smoothly in a wet grinder. You can also use a mixer to do this. But make sure it is done in batches depending on your jar capacity.
+                Step 4
+                                
+                Once the mixture is 3/4th done, wash, drain and add the soaked poha/aval to it. Continue grinding, until you get a smooth consistency. It is absolutely fine to have a runny batter.
+                Step 5
+                                
+                Transfer to a big container and add salt. Use your hands to mix them to initiate fermentation. Let them rest for 8 hours or overnight.
+                Step 6
+                                
+                Heat an aapam pan in your range and add one big ladle of aapam batter to it. Twist the aapam pan and cover it with a lid. Make sure to have thinner corners with some batter resting at the center. It takes a minute and a half to cook an aapam.
+                """);
+    }
+    public static void kanchipuram_idli(){
+        System.out.println("""
+                Ingredients
+                0/7 Ingredients
+                Adjust Servings\s
+                8
+                1 cups Black Whole Urad Dal \s
+                2 cups Raw Rice \s
+                1 dashes Salt \s
+                Tempering Ingredients
+                2 tsp Ghee \s
+                1 sticks Curry Leaves \s
+                1 tsp Pepper Corns \s
+                0.5 tsp Jeera Seeds \s
+                Instructions
+                0/6 Instructions
+                Step 1
+                                
+                In a bowl add two cups of raw rice and one cup of whole black Urad Dal. Soak them in water for 6 hrs.
+                Step 2
+                                
+                Wash and drain water. Add them to the wet grinder and grind to a smooth, butter like batter.
+                Step 3
+                                
+                Transfer to a bowl and add salt. Mix them together and let it ferment overnight or 8 hrs.
+                Step 4
+                                
+                Heat a pan with two teaspoons of ghee. Once it melts, add one teaspoon of pepper corns and half a teaspoon of Jeera Seeds. Let them roast. Add it to the batter and mix.
+                Step 5
+                                
+                Grease tumblers with ghee and fill them 3/4th with batter.
+                Step 6
+                                
+                Steam in an Idli pot for 6- 7 mins. Demold and serve with chutney or Goths.
+                """);
+    }
+    public static void mushroom_pepper_masala(){
+        System.out.println("""
+                Ingredients
+                0/12 Ingredients
+                Adjust Servings\s
+                5
+                500 g Mushrooms\s
+                0.25 cups Chopped Onions\s
+                2 tsp Tomato Paste\s
+                1 tsp Chopped Garlic \s
+                1 tsp Pepper Corns \s
+                0.25 tsp Turmeric Powder \s
+                1 tsp Coriander Powder \s
+                0.25 tsp Red Chilli Powder \s
+                1 dashes Salt\s
+                Tempering Ingredients
+                2 sticks Red Chilli\s
+                0.25 tsp Jeera Seeds \s
+                1 sticks Curry Leaves\s
+                Instructions
+                0/7 Instructions
+                Step 1
+                                
+                Heat a pan and add a teaspoon of pepper corns. Roast them for a minute to two. Set aside. Coarsely grind them to a powder in a mixer jar.
+                Step 2
+                                
+                In the same pan, add two teaspoons of oil. Add quarter teaspoons of jeera, whole red chili and chopped garlic. Sautee for 2 to 3 mins.
+                Step 3
+                                
+                Add chopped Onions, turmeric powder , two teaspoons of tomato sauce, and sauté them together.
+                Step 4
+                                
+                Add coriander powder, red chili powder and salt. Sautee until raw smell from spices goes off. Add cubed mushrooms and coat them with the spice mix.
+                Step 5
+                                
+                Cover the pan with lid and let the mushroom cook. The mushroom will leave out water at first.
+                Step 6
+                                
+                After cooking for about 5-6 mins, the water evaporates. In this stage add the coarsely ground pepper and toss them over the mushroom.
+                Step 7
+                                
+                Let the mushroom stay in stove for 2-3 mins. Switch off stove and add some fresh curry leaves. Serve with rotis or rice.
+                """);
+    }
+    public static void spinach_raitha(){
+        System.out.println("""
+                Ingredients
+                0/9 Ingredients
+                Adjust Servings\s
+                4
+                1 cups Thick Curd\s
+                1 cups Spinach \s
+                1 sticks Green Chilli \s
+                1/4 tsp Chaat Masala \s
+                1/4 tsp Red Chilli flakes \s
+                1/2 pinches Sugar\s
+                1 dashes Salt\s
+                Tempering Ingredients
+                1/2 tsp Oil \s
+                1/4 tsp Jeera Seeds\s
+                Instructions
+                0/4 Instructions
+                Step 1
+                                
+                Heat a pan with water. Add a pinch of Salt to it when it comes to boiling stage. When the water boils , add a cup of washed spinach with a pinch of sugar.
+                Step 2
+                                
+                After 2-3 mins, when the spinach is blanched, turn off stove and drain them. Add them to a bowl of ice water to stop further cooking. Squeeze water and finely chop them.
+                Step 3
+                                
+                Whisk the curd with salt. Add one chopped green chili, red chili flakes, Chaat masala. Mix together. Add the chopped spinach.
+                Step 4
+                                
+                In a small pan, add half a teaspoon of oil. When hot, add jeera seeds and roast them. Transfer the tempering to raitha and serve.
+                """);
+    }
+    public static void srilankan_manipittu(){
+        System.out.println("""
+                Ingredients
+                0/5 Ingredients
+                Adjust Servings\s
+                2
+                1 cups Rice Flour \s
+                3/4 cups Luke Warm Water\s
+                1/4  cups Grated Coconut \s
+                1/4 tsp Salt\s
+                1 tsp Gingelly Oil \s
+                Instructions
+                0/5 Instructions
+                Step 1
+                                
+                Add one cup of rice flour to a plate. Add a quarter teaspoon of salt. Mix them together.
+                Step 2
+                                
+                Add 3/4th cup of lukewarm water to the rice flour. Add them in batches and combine together to a soft dough.
+                Step 3
+                                
+                Sprinkle one teaspoon of rice flour to the plate. Squeeze the dough through a murukku press with big holes in them.
+                Step 4
+                                
+                Coat them with rice flour and pass them through the sieve to remove excess rice flour.
+                Step 5
+                                
+                In a puttu maker, add a tablespoon of grated coconut and top it with prepared mani puttu. Steam them for 5- 7 minutes. Serve hot with sugar/coconut milk/bananas.
+                """);
+    }
+    public static void tirunelveli_idli_molagai_podi(){
+        System.out.println("""
+                Ingredients
+                0/9 Ingredients
+                Adjust Servings\s
+                8
+                1/2 cups Urad Dal \s
+                1/4 cups Channa Dal \s
+                1 cups Red Chilli \s
+                1/4 cups Curry Leaves \s
+                1 tbsp Sesame Seeds \s
+                2 sticks Garlic Cloves\s
+                1 dashes Salt \s
+                1/2 tsp Asafoetida Powder\s
+                1 tsp Gingelly Oil \s
+                Instructions
+                0/4 Instructions
+                Step 1
+                                
+                Dry roast half cup of Urad dal and quarter Channa dal until goden color. Let them cool down completely. Add one tablespoon of sesame seeds and roast till they pop. Let them cool down too.
+                Step 2
+                                
+                In the same pan, add a teaspoon of oil. When hot, add one cup of red chilli. Roast till they are brownish black. Add curry leaves and two cloves of garlic to it. Turn off stove. Let it cool down.
+                Step 3
+                                
+                In a mixer jar, add the dals and sesame seeds. Pulse them 3-4 times to get a coarse texture.
+                Step 4
+                                
+                Add the roasted redchilli, garlic and curry leaves. To this add salt and asafoetida powder. Grind coarsely. let it cool down. Store in an airtight glass container.
+                """);
+    }
+    public static void bun_dosai(){
+        System.out.println("""
+                Ingredients
+                0/5 Ingredients
+                Adjust Servings\s
+                6
+                2 cups Raw Rice \s
+                1 cups Poha \s
+                3/4 cups Grated Coconut \s
+                1 tsp Fenugreek Seeds \s
+                2 tsp Sesame Oil \s
+                Instructions
+                0/3 Instructions
+                Step 1
+                                
+                Measure , Wash and Soak 2 cups of raw rice with a teaspoon of methi seeds for 4-5 hrs. Wash one cup of poha/flattened rice thoroughly. Add 3/4 cup of grated coconut and soak about an hour.
+                Step 2
+                                
+                Grind everything together. Add salt and let it ferment overnight.
+                Step 3
+                                
+                In a Appam pan, add a laddle of batter. Smear some gingelly oil. Cook covered. Flip over and cook other side until done. Soft and Spongy Bun dosai is ready to be served.
+                                
+                """);
+    }
+    public static void methi_dal_tadka(){
+        System.out.println("""
+                Ingredients
+                0/12 Ingredients
+                Adjust Servings\s
+                4
+                1 cups Methi Leaves\s
+                1/2 cups Toor Dal \s
+                1 sticks Onion \s
+                1 sticks Tomato\s
+                2 sticks Green chilli\s
+                1/4 tsp Turmeric Powder\s
+                1 tsp salt\s
+                Tempering Ingredients
+                1/4 tsp Mustard Seeds \s
+                1/4 tsp Jeera Seeds \s
+                2 sticks Red Chilli \s
+                4 sticks Garlic\s
+                1 tsp Oil\s
+                Instructions
+                0/4 Instructions
+                Step 1
+                                
+                Wash and add half cup of toor dal, roughly chopped onion, tomato, green chilli and washed methi greens to a pressure cooker. Let it cook for three whistles.
+                Step 2
+                                
+                Once the pressure is released, mash them completely. Add turmeric powder and salt. Set aside.
+                Step 3
+                                
+                Heat a pan with a teaspoon of oil. Add mustard seeds, cumin seeds, red chilli and crushed garlic. Roast until garlic turns brown.
+                Step 4
+                                
+                Add mashed dal. Let it come to boiling stage. Turn off stove and serve with rotis / rice.
+                """);
+    }
+}
+import java.util.Scanner;
+public class Snack {
+    public static void dish(){
+        Scanner obj=new Scanner(System.in);
+        System.out.print("""
+                1 ) Vegetable Cutlets
+                2 ) Rava Kesari
+                3 ) CHANNA SUNDAL
+                4 ) Coconut Ladoo
+                5 ) Ribbon Pakoda
+                6 ) Pottukadalai Murukku
+                7 ) Vazhaipoo Vadai
+                8 ) Kale Sprouts Sandwich
+                9 ) Moongdal Sundal
+                10 ) Omapodi
+                11 ) Short Bread Cookies
+                12 ) Carrot Halwa
+                13 ) Patnam Pakoda
+                14 ) Bread Pizza
+                15 ) Kambu Pakoda
+                16 ) Masala Puri
+                17 ) Pepper Thattai
+                18 ) Vella Seedai
+                19 ) Poorna Kozhukattai
+                20 )  Sweet Potato Bonda
+                """);
+        System.out.print("enter your dish number :");
+        int dn = obj.nextInt();
+        System.out.println("***************************************************************************************************************************************************");
+        if (dn == 1)
+            Snack.vegetable_cutlets();
+        else if (dn == 2) {
+            Snack.rava_kesari();
+        } else if (dn == 3) {
+            Snack.channa_sundal();
+        } else if (dn == 4) {
+            Snack.coconut_ladoo();
+        } else if (dn == 5) {
+            Snack.ribbon_pakoda();
+        } else if (dn == 6) {
+            Snack.pottukadalai_murukku();
+        } else if (dn == 7) {
+            Snack.vazhaipoo_vadai();
+        } else if (dn == 8) {
+            Snack.kale_sprouts_sandwich();
+        } else if (dn == 9) {
+            Snack.moongdal_sundal();
+        } else if (dn == 10) {
+            Snack.omapodi();
+        } else if (dn == 11) {
+            Snack.short_bread_cookies();
+        } else if (dn == 12) {
+            Snack.carrot_halwa();
+        } else if (dn == 13) {
+            Snack.patnam_pakoda();
+        } else if (dn == 14) {
+            Snack.bread_pizza();
+        } else if (dn == 15) {
+            Snack.kambu_pakoda();
+        } else if (dn == 16) {
+            Snack.masala_puri();
+        } else if (dn == 17) {
+            Snack.pepper_thattai();
+        } else if (dn == 18) {
+            Snack.vella_seedai();
+        } else if (dn == 19) {
+            Snack.poorna_kozhukattai();
+        } else if (dn == 20) {
+            Snack.sweet_potato_bonda();
+        } else {
+            System.out.println("no dish found");
+        }
+        System.out.println("***************************************************************************************************************************************************");
+    }
+    public static void vegetable_cutlets(){
+        System.out.println("""
+                Ingredients
+               ------------
+                1 cups Boiled Potatoes\s
+                0.25 cups Boiled Green peas\s
+                4 sticks Bread slices\s
+                1 sticks Finely chopped green chilli\s
+                0.25 tsp Ginger paste\s
+                0.5 tsp Red chilli powder\s
+                0.25 tsp Garam masala powder\s
+                1 tbsp Maida\s
+                4 tbsp Bread crumbs\s
+                2 dashes Salt\s
+                1 cups Oil\s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash, boil and peel the skin of potatoes. Mash them roughly with a heavy ladle. Boil the green peas and add to the mashed potatoes.
+                Step 2
+                Add the green chili, ginger, red chili powder, and garam masala and mix them.
+                Step 3
+                Cut down the edges of the bread slices. Soak the bread slices in water and squeeze the water completely by placing the bread slices between the hands.
+                Step 4
+                Once there is no water, add them to the mashed potatoes and knead together. Shape them as desired. Make a watery paste by mixing maida to water.
+                Step 5
+                Coat the shaped cutlets with the maida- water mix and roll them to the bread crumbs. Heat the oil and deep fry them until done.
+                """);
+    }
+    public static void rava_kesari(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 cups Rava/ Sooji/ Semolina\s
+                1.25 cups Sugar\s
+                3 cups Water\s
+                2 pinches Cardamom powder\s
+                0.5 cups Ghee\s
+                1 pinches Orange Food color \s
+                1 tsp Cashew nuts\s
+                1 tsp Raisins\s
+                
+                Instructions
+                ------------
+                Step 1
+                Heat a heavy-bottomed pan in the stove and add a teaspoon of ghee.
+                Step 2
+                Add cashews and roast them till golden. Follow the same procedure for raisins and quickly remove from heat to avoid burning. Set them aside.
+                Step 3
+                In the same pan, roast one cup of Rava /sooji. Warm water in a saucepan on the other side of the stove and slowly pour them to the roasted Rava/sooji in the pan.
+                Step 4
+                Keep mixing continuously to avoid lumps. This is the tricky part of this Kesari. It becomes hard to break the lumps if it is formed.
+                Step 5
+                While stirring the Rava/sooji, add orange food color to it. Once the Rava is cooked in 5 – 7 mins, slowly add sugar. Keep stirring the rava while doing this as it might form lumps again.
+                Step 6
+                The Kesari will become sticky soon after sugar is added. Start adding ghee in slow quantity and keep stirring until the desired consistency is obtained.
+                Step 7
+                Before switching off the stove, add cardamom powder and garnish with roasted cashews and raisins. Serve hot or warm. This is a fool-proof recipe and can be easily made by anyone.
+                """);
+    }
+    public static void channa_sundal(){
+        System.out.println("""
+                Ingredients
+                ------------
+                Main Ingredients
+                1 cups Chick pea | Channa\s
+                2 tbsp Fresh Coconut\s
+                0.5 tsp Grated Ginger\s
+                1 dashes Salt \s
+                Dry Roast and Grind
+                1 tsp Coriander Seeds\s
+                4 sticks Pepper corns\s
+                0.25 tsp Jeera|Cumin seeds\s
+                1 sticks Red chilli \s
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds\s
+                0.25 tsp Urad Dal\s
+                1 sticks Curry leaves\s
+                
+                Instructions
+                ------------
+                Step 1          
+                In a broad vessel, wash and soak the chickpea for 8 hours. Once it is soaked, drain and wash them and place them in a pressure cooker for four whistles. When the pressure is released, drain the water and set the cooked chickpea aside.
+                Step 2           
+                Heat a pan and dry roast the ingredients given under the roast and grind section on a medium flame. Let it cool down and grind them to a fine powder.
+                Step 3        
+                Heat oil in a pan and add ingredients in the “to temper” section. Once it splutters add the grated ginger and give a stir. Now add the cooked chickpea and toss well.
+                Step 4        
+                After a minute, add a spoon of the grounded spice powder and toss until they are infused in the sundal.
+                Step 5        
+                Lastly, add salt and finish off with a lavish spoon of freshly grated coconut. Switch off the flame and transfer to the serving bowl.
+                """);
+    }
+    public static void coconut_ladoo(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 cups Powdered Coconut \s
+                0.5 cups Condensed milk \s
+                
+                Instructions
+                ------------
+                Step 1
+                Heat a pan and add one cup of powdered coconut. Roast them in medium flame for 2 minutes, until the raw smell of it disappears.
+                Step 2
+                Add the half cup of condensed milk to it. Quickly stir them keeping the flame in low. Add 1/2 tsp of ghee if required.
+                Step 3
+                Keep stirring for 2 – 3 mins until they come together and do not stick to the pan. Switch off the flame and sprinkle a few drops of rosewater if desired. (I did not add rosewater as I wanted to feel the coconut flavor).
+                Step 4
+                After a minute, grease your palms with the half spoon of ghee and roll them to small ladoos /balls. Serve and enjoy this soft, chewy ladoos. They stay fresh for 2-3 days if refrigerated.
+                """);
+    }
+    public static void ribbon_pakoda(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 cups Rice Flour\s
+                1 cups Gram Flour\s
+                2 tbsp Roasted gram dal\s
+                2 tsp Melted butter\s
+                2 tsp Hot Oil\s
+                1 tsp Coarsely ground pepper\s
+                1 pinches Asafoetida\s
+                2 dashes Salt\s
+                4 cups Cooking Oil \s
+                
+                Instructions
+                ------------
+                Step 1
+                In a wide mixing bowl, take one cup of rice flour and one cup of gram flour. Add salt to it and mix them well.
+                Step 2
+                In a mixer, finely grind 2 tbsp of roasted gram dal(Pori kadalai/ Pottu kadalai). This will fetch around 4 tbsp of roasted gram dal powder. Sieve the grounded powder and add 2 tbsp of this to the rice+gram flour mix.
+                Step 3
+                Add asafoetida, salt, pepper powder, and melted butter to it. Mix them well and add water slowly. The entire mixture will require only plus or minus half a cup of water.
+                Step 4
+                Keep mixing and bring them into a soft dough. Cover with a damp cloth or cling wrap to avoid them being dried up.
+                Step 5
+                In a wide pan, heat oil and wait until it becomes hot. Keep the flame in medium. Take a ball of the dough and make them in an elongated shape. Fix the murukku press with ribbon pakoda stencil and grease them with little oil. Place the dough inside and squeeze them into the oil in a circular motion.
+                Step 6
+                Wait for 2 – 3 mins and then turn the other side upside down. Fry until the sizzling sound stops. Remove and drain them on a paper towel.
+                Step 7
+                Allow it to cool down and store them in an airtight container. This stays fresh for more than two weeks if handled properly.
+                """);
+    }
+    public static void pottukadalai_murukku(){
+        System.out.println("""
+                Ingredients
+                ------------
+                2 cups Rice flour \s
+                0.5 cups Roasted gram flour powder\s
+                2 tsp Melted butter\s
+                2 tsp Hot Oil\s
+                1 tsp Ajwain\s
+                1 pinches Asafoetida \s
+                1.25 cups Water\s
+                6 cups Oil For Deep Frying\s
+                
+                Instructions
+                ------------
+                Step 1
+                In a wide bowl, sieve the rice flour and powdered roasted gram dal together.
+                Step 2
+                Bring the butter to room temperature or melt them in a microwave and add it to the sieved flour.
+                Step 3
+                Add the required salt to taste, asafoetida, and ajwain to the flour. Mix them uniformly and add water little by little to combine them into a soft dough.
+                Step 4
+                Heat oil in a pan with medium flame. Take a murukku press with three holes and press the murukku in the back of a ladle.
+                Step 5
+                Once the oil is hot enough, drop them one by one and wait for 3 – 5 mins to get them cooked. Once the shhh sounds stop and the bubbles subside, it is done. Drain them on a paper towel and transfer to an airtight box once they cool down. Stays fresh for 3 – 4 weeks if handled properly.
+                """);
+    }
+    public static void vazhaipoo_vadai(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 cups Cleaned and Chopped Banana Flower\s
+                0.5 cups Gram dal/ Channa dal\s
+                1 tbsp Rice flour\s
+                4 sticks Red chilli\s
+                0.5  tsp Grated Ginger\s
+                0.25 tsp Fennel seeds\s
+                2 sticks Curry leaf\s
+                1 drops Salt\s
+                1 cups Cooking Oil  ((For Deep Frying) )
+                
+                Instructions
+                ------------
+                Step 1    
+                Wash and soak the channa dal along with raw rice for 3 hours.
+                Step 2   
+                Meanwhile, clean the vazhaipoo and finely chop them. Place them soaked in water until use.
+                Step 3                             
+                Once the dal is soaked, drain the water and wash them. Place them in a mixer. Add red chili, salt, and grind them very coarse.
+                Step 4
+                Remove them from the mixer and transfer to a wide bowl. Add required salt, fennel seeds, chopped vazhaipoo / Banana Flower, curry leaf. Finally, add rice flour and mix them well uniformly.
+                Step 5
+                Heat oil in a pan. Pinch out a medium-sized ball from the vadai dough and flatten them in between the palms. Once the oil is heated up, slowly slide the flattened vadai from the sides.
+                Step 6            
+                Cook for a minute and flip over the other side until both sides are cooked and turn brown. The aroma that it renders while frying is divine. Drain from oil and place on a paper tissue to drain excess oil. Serve with rice or as an evening snack.
+                """);
+    }
+    public static void kale_sprouts_sandwich(){
+        System.out.println("""
+                Ingredients
+               ------------
+                Main Ingredients
+                4 sticks Whole Wheat Bread Slices\s
+                1 cups Kale greens  ((Tightly packed))
+                2 tbsp Sprouted Green gram\s
+                1 tsp Grated Carrot\s
+                2 sticks Cheese slice\s
+                1 tsp Finely Chopped Onion\s
+                1 dashes Pepper powder\s
+                0.5 dashes Salt\s
+                1 tsp Lemon juice\s
+                Tempering
+                1 tsp Jeera seeds\s
+                1 tsp Olive oil \s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash and roughly chop the kale greens. Chop onions, carrots finely. Wash the sprouts and set aside.
+                Step 2
+                Heat a pan and drizzle oil in it. Add jeera seeds and wait until they are roasted. Add finely chopped onion and carrots and sauté for a while until they are half done.
+                Step 3
+                Add the chopped kale greens and mix. Cook until they are done and add salt and pepper to it. Switch off the stove and then add sprouts. Toss them in that heat and add lemon juice.
+                Step 4
+                Grease a Tawa in the side. Smear a little of butter/olive oil on both sides of the bread. Lay down a slice of cheese and load with sandwich filling.
+                Step 5
+                Cover with another greased bread slice. Place in a Tawa and keep weight on top of it. Cook for a minute. Flip over the other side and cook another minute, until it is done. Serve this hearty and healthy sandwich for breakfast or any meal.
+                """);
+    }
+    public static void moongdal_sundal(){
+        System.out.println("""
+                Ingredients
+                ------------
+                Main Ingredients
+                1 cups Moong Dal\s
+                2 tbsp Grated Coconut\s
+                1 dashes Salt\s
+                2 sticks Green Chilli\s
+                Tempering Ingredients
+                0.5 tsp Ginger  (Fine chopped)
+                1 tsp Coriander leaves\s
+                0.25 tsp Mustard seeds \s
+                1 tsp Cooking Oil\s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash and soak moong dal for 15 – 20 mins. Meanwhile fine chop the green chili and ginger pieces.
+                Step 2
+                After it is par soaked, drain water off the moong dal and allow it to boil in a wide mouth vessel along with a pinch of salt.
+                Step 3
+                Cook this in a medium flame. It takes about 15 – 20 mins for this to be done. Keep an eye and check often for this to be done.
+                Step 4
+                Once it is cooked enough, pass it through a strainer and filter off the water. Run this through tap water to avoid them cooking further. Set this aside.
+                Step 5
+                Heat a pan and drizzle a tsp of oil. When they shimmer, add mustard seeds. Wait till they pop up, add green chili and grated ginger.
+                Step 6
+                Simmer the stove and add the cooked moong dal. Toss a while and check for the salt. Lavishly spread the grated coconut and chopped fresh coriander leaves. Switch off the stove and serve them fresh.
+                """);
+    }
+    public static void omapodi(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 cups Gram flour /Besan Flour\s
+                0.5 cups Rice Flour\s
+                2 tsp Ajwain seeds / Omam\s
+                1 tbsp Butter\s
+                1 dashes Salt\s
+                1 cups Cooking Oil\s
+                
+                Instructions
+                ------------
+                Step 1           
+                Measure One cup of gram flour and half a cup of rice flour in a wide bowl. Mix them together and add salt to it. Set this aside.
+                Step 2             
+                Heat a pan and dry roast the ajwain/ omam for half a minute. Switch off the stove and roast in the remaining heat. Take care not to burn them.
+                Step 3          
+                Transfer to a small mixer jar. Add a tsp of water and grind them. Pass this through a strainer. Repeat the process two more times and extract the juice from the ajwain seeds.
+                Step 4             
+                Melt one spoon of butter and add to the flour mixture. Heat oil in a wide Kadai. Add a tbsp of hot oil to the flour.
+                Step 5          
+                Slowly add the ajwain water to the flour mixture and knead to a loose dough. Check the temperature of the oil. The oil should be hot and not fuming hot.
+                Step 6             
+                Use the idiyappam mold in the murukku press and squeeze the dough to the oil directly in a circular motion. The oil will come up at first and soon will be fine.
+                Step 7       
+                Cook for about 30 secs and flip over the other side to get it done. Use two paddles and gently transfer to a paper towel for the oil to drain.
+                Step 8
+                Bring it to room temperature and store in an airtight box.
+                """);
+    }
+    public static void short_bread_cookies(){
+        System.out.println("""
+                Ingredients
+                ------------
+                0.5 cups Maida/ All Purpose flour\s
+                0.25 cups Sugar\s
+                0.25 cups Butter\s
+                2 drops Vanilla essence\s
+                2 tbsp Cold Milk\s
+                
+                Instructions
+                ------------
+                Step 1      
+                In a wide bowl, add 1/4 a cup of sugar and butter. Use a whisk and beat the sugar + Butter until they turn light and fluffy like snow.
+                Step 2           
+                Meanwhile, sieve 1/2 a cup of APF and set aside. Add half a tsp of vanilla essence and combine together. Now add the flour to the butter mixture slowly.
+                Step 3           
+                Combine them using a flat spatula until they form a crumble-like consistency. Now, using your hands, knead them into a pliable dough. If you are not able to pile the dough into a ball, sprinkle one or two teaspoons of milk to it and form a ball-like dough. Roll them into half inch thick and cut into squares or use a cookie cutter to shape.
+                Step 4              
+                Preheat oven to 190 C for 10 mins. Arrange the cookie over butter paper in a cookie tray.
+                Step 5        
+                Transfer them to the oven and bake for 15 mins at 190 C. Pull them out and rest them in a cooling rack. It will look chewy at this stage. However, when it is cooled completely, they turn crispy. You can use your imagination and decorate them or simply have them as such.
+                """);
+    }
+    public static void carrot_halwa(){
+        System.out.println("""
+                Ingredients
+                ------------
+                3 cups Grated carrots \s
+                2.25 cups Milk\s
+                0.75 cups Sugar\s
+                1 pinches Cardamom powder\s
+                0.25 cups Ghee\s
+                1 tsp Cashews\s
+                
+                Instructions
+                ------------
+                Step 1
+                Wash, peel, and grate the carrots. Measure three loosely packed cups of grated carrot. Heat a heavy-bottomed pan and drizzle a spoon of ghee on it.
+                Step 2
+                Roast the cashews to a golden brown and set them aside. In the same pan with leftover ghee, add the grated carrots and sautee them for about a minute to two.
+                Step 3
+                Measure two and a quarter cups of milk and add to the carrots. Mix thoroughly. After adding the milk, place the stove on medium-low and cook the carrots. This will almost take about 20 mins for the carrots to be done.
+                Step 4
+                Once all the milk is evaporated and carrots are cooked, add 3/4th a cup of sugar to it. Sugar will start to melt and get mixed with the carrots.
+                Step 5
+                Keep adding a tsp of ghee to the carrot mixture. The halwa will begin to get tightened in about 10 mins oozing out the ghee from it. This is the right stage. Switch off the stove.
+                Step 6
+                Add a generous pinch of cardamom powder and roasted cashews. Transfer to a serving bowl and serve warm.
+                """);
+    }
+    public static void patnam_pakoda(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 cups Roasted Gram dal/ Pottukadalai/ chutney dal \s
+                0.5 cups Rice Flour\s
+                2 tbsp Onion \s
+                3 tbsp Green Chilli\s
+                1 tsp Fine Chopped Ginger\s
+                3 sticks Garlic Cloves\s
+                0.25 tsp Fennel Seeds\s
+                1 tbsp Coriander Leaves\s
+                1 tsp Curry Leaves\s
+                1 dashes Salt\s
+                1 cups Cooking Oil (For Deep Frying)
+                
+                Instructions
+                ------------
+                Step 1             
+                In a mixer jar, place green chilies, garlic, ginger, and fennel seeds and coarse grind it using pulse mode. Place it in a wide bowl.
+                Step 2          
+                In the same jar, grind one cup of roasted gram and ground into a fine powder. Add it to the bowl. Now add half a measure of rice flour to it along with salt.
+                Step 3           
+                Chop onions, Coriander, Curry leaves finely and add them to the bowl. Heat oil for deep frying. Add 2 tsp of hot oil to the pakoda mix and mix it gently to form a crumble. Add water little by little to make a pliable dough. Make small irregular-shaped balls out of it and set them aside.
+                Step 4             
+                Once the oil is hot enough, deep fry these in small batches. Do not overcrowd. flip it over on the other side and cook thoroughly. Remove from oil once its golden brown and place on tissue paper. Serve it with ketchup or as such.
+                """);
+    }
+    public static void bread_pizza(){
+        System.out.println("""
+                Ingredients
+                ------------
+                Main Ingredients
+                6  Whole Wheat Bread Slices (Substitute with other breads)
+                1 cups Pizza Sauce\s
+                1  Bell Peppers (cubed)\s
+                1  Onion (cubed)\s
+                0.25 cups Cheddar Cheese\s
+                Seasoning
+                1  Mixed Italian Herb Blend (to taste)
+                1  Salt (as needed)
+                1  Pepper (as needed)
+                2 tsp Olive Oil
+                
+                Instructions
+                ------------
+                Step 1
+                Preheat oven to 300 deg F. Clean, chop the onions, and bell peppers into cube shapes. Grate the cheese if you use block type cheese.
+                Step 2
+                In a cookie sheet, line up bread without touching each other. Drizzle olive oil to the bread and apply pizza sauce generously over the bread.
+                Step 3
+                Now top off with Onions and bell peppers generously. Sprinkle salt, pepper over the toppings. Make sure to check your pizza sauce for salt. If it already has salt in it, avoid adding salt again.
+                Step 4
+                Top off with a generous amount of cheese and finish off with mixed herbs. Place it in the oven and bake for 15 mins and additionally broil for 5 mins if you like the cheese to change color.
+                Step 5
+                Remove from the oven and allow it cool a bit. Slice and serve this easy and yummy faux pizza.
+                """);
+    }
+    public static void kambu_pakoda(){
+        System.out.println("""
+                Ingredients
+                ------------
+                4 tbsp Bajra flour / Kambu flour\s
+                2 tsp Rice Flour\s
+                3 tsp Onion (Cut length wise)
+                3 tsp Green chilli\s
+                0.5 sticks Ginger  (Chopped fine)
+                4 sticks Garlic Cloves (Crushed coarsely)
+                0.25 tsp Turmeric powder\s
+                1 tsp Red Chili Powder\s
+                0.25 tsp Fennel seeds\s
+                1 sticks Curry leaves\s
+                1 dashes Salt\s
+                1 cups Cooking Oil  (( For Deep Frying))
+                
+                Instructions
+                ------------
+                Step 1          
+                Slice the onions very thin lengthwise, finely chop the green chilies and ginger. Coarsely pound the garlic cloves with a mortar and pestle.
+                Step 2          
+                Take a wide dry mixing bowl, add bajra flour followed by rice flour. Add turmeric powder, red chili powder, salt, fennel seeds, and give a mix.
+                Step 3            
+                Now add the chopped onion, green chili, ginger and garlic to it. Tear curry leaves roughly and adds to the pakoda mixture.
+                Step 4 
+                Sprinkle water and combine together. Make sure to add a small amount of water at a time. The pakoda mix should be in a crumble consistency. It should hold shape if combined between the fist. Heat oil in a heavy-bottomed pan for deep frying. Once it is hot enough, add a ladle of hot oil to the pakoda mixture.
+                Step 5         
+                Take the pakoda mix and add it around the hot oil. Fry the kambu pakoda flipping them on the other sides and repeat until they are fried up completely.
+                Step 6
+                Remove from oil and drain. Serve hot with ketchup. They turn out very crispy and taste great with a cup of ginger tea.
+                """);
+    }
+    public static void masala_puri(){
+        System.out.println("""
+                Ingredients
+                ------------
+                For the Peas Masala
+                1 cups Dry Green Peas\s
+                0.5 cups Chopped Onions\s
+                0.5  cups Chopped Tomatoes\s
+                1 sticks Ginger\s
+                3 sticks Garlic Cloves\s
+                0.25  tsp Jeera Seeds\s
+                0.25 tsp Fennel Seeds\s
+                1 tsp Coriander Powder\s
+                0.5 tsp Red chilli Powder\s
+                0.25 tsp Garam Masala Powder\s
+                0.25 tsp Amchur Powder\s
+                2 tbsp Cooking Oil \s
+                1 dashes Salt\s
+                For Assembling Masala Poori
+                20 sticks Chaat Puris\s
+                0.25 cups Chopped Onions \s
+                0.25 cups Chopped Tomatoes \s
+                2 tbsp Imli Chutney \s
+                2 tbsp Coriander Chutney \s
+                1 tsp Chaat Masala \s
+                2 tbsp Coriander Leaves\s
+                
+                Instructions
+                ------------
+                Step 1           
+                Soak green peas for 8 hours. Wash and pressure cook for 4 whistles.
+                Step 2         
+                In a pan add oil and temper with jeera seeds and Fennel seeds. Sautee onions, tomatoes, garlic, and ginger.
+                Step 3          
+                Grind the sauteed onion and tomato to a fine paste.
+                Step 4           
+                Add the grounded paste to the cooked peas.
+                Step 5            
+                To the cooked peas add coriander powder, red chilli powder, garam masala powder and Amchur powder. Season with salt.
+                Step 6             
+                Let it boil for about 5 mins until the rawness of the masala powders goes off. Switch off the stove.
+                Step 7         
+                Place crushed chaat puris on a serving plate. Pour the cooked peas masala on top of the puris. Spread finely chopped onions, tomatoes to the top. Drizzle Imli chutney and green chutney. Top off with coriander leaves, a generous pinch of chaat masala, and sev. Serve immediately.
+                """);
+    }
+    public static void pepper_thattai(){
+        System.out.println("""
+                Ingredients
+                ------------
+                2 cups Rice Flour\s
+                3 tsp Roasted Gram flour/ Pottukadalai Maavu\s
+                2 tsp Melted Butter\s
+                2 tsp Chana Dal/ Kadala Paruppu\s
+                1 tsp Fine Chopped Curry leaves\s
+                1  tsp Crushed Pepper\s
+                1  tsp Salt\s
+                4 cups Cooking Oil (For Deep Frying )
+                
+                Instructions
+                ------------
+                Step 1            
+                Wash and Soak Channa dal for about 30 mins.
+                Step 2           
+                In a bowl, add rice flour, roasted gram flour, Crushed pepper, salt, soaked channa dal, chopped curry leaves, and melted pepper.
+                Step 3        
+                Mix everything together. Add water slowly and combine them to form a soft dough.
+                Step 4          
+                In a greased plastic sheet, take a small orange sized dough and press it using a flat bottomed bowl to make round shaped thattais. Poke it with a fork.
+                Step 5       
+                Heat enough oil in a thick bottomed pan and once it is hot, slide the thattai to the hot oil.
+                Step 6           
+                Cook about 3 mins on one side and flip over to the other side to cook enough and until the sizzling sound recedes.
+                Step 7       
+                Drain on a paper towel and allow it to come to room temperature. Once cooled down, store in an airtight box. This will stay fresh for two weeks.
+                """);
+    }
+    public static void vella_seedai(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 cups Rice Flour / Idiyappam/ Kozhukattai Flour \s
+                1 tsp Roasted Urad Dal Flour \s
+                1/2 cups Jaggery Powder \s
+                2 tbsp Water \s
+                1 tsp Soft Butter \s
+                1 tsp Grated coconut\s
+                0.5 tsp Sesame Seeds\s
+                0.25 tsp Cardamom Powder \s
+                3 cups Oil  (For Deep Frying )
+                
+                Instructions
+                ------------
+                Step 1          
+                Choose the right rice flour for the seedai. If available, use Idiyappam or kozhukaatai that is available in store.
+                Step 2         
+                Dry roast the rice flour in the medium flame until golden brown or the vapor comes off. It took me exactly 4 mins to achieve this consistency. Let it cool down.
+                Step 3        
+                Sieve roasted rice flour and Urad dal flour thoroughly to form a fine powder.
+                Step 4           
+                Add sesame seeds, grated coconut, and softened butter.
+                Step 5     
+                In a pan, add half a cup of jaggery powder and add two tablespoon of water to form a syrup consistency. Strain them and add to the flour. Add a little amount of water at a time and knead them to a dough.
+                Step 6         
+                Roll them in-between your greased fingers to form an irregular ball-shaped seedai. Poke a small hole.
+                Step 7        
+                Drop Seedai to hot oil along the sides in small batches. Cook both sides and once it turns golden brown, drain off to a paper towel.
+                """);
+    }
+    public static void poorna_kozhukattai(){
+        System.out.println("""
+                Ingredients
+                ------------
+                For Outer Covering
+                1 cups Rice flour \s
+                3  cups Water\s
+                1 dashes Salt \s
+                1 tsp Gingelly Oil \s
+                For the Inner Filling / Poornam
+                0.5 cups Channa Dal \s
+                0.25 cups Jaggery Powder\s
+                2 sticks Cardamom Pods\s
+                1 tsp Ghee\s
+                2 tsp Grated Coconut \s
+                
+                Instructions
+                ------------
+                For the filling/ Poornam
+                Step 1      
+                Soak Channa dal for 30 mins. Wash and pressure cook for 3 whistles until it is soft.
+                Step 2             
+                Heat a pan and add 1/4th cup of jaggery powder along with 3 tbsp of water. Let it dissolve completely. Strain the jaggery water for impurities and bring it to a boil.
+                Step 3          
+                Add the cooked channa dal to it and let it cook for 3 - 4 mins until it thickens.
+                Step 4          
+                Add two teaspoons of freshly grated coconut to it. The filling will begin to thicken and form a soft dough.
+                Step 5
+                Season with freshly pounded cardamom pods and a teaspoon of ghee. Set them aside to cool down while preparing the outer covering.
+                For the Outer covering
+                Step 6       
+                Heat three cups of water in a pan and bring it to boil. Add a dash of salt and a drizzle of gingelly oil to it. When it comes to a rolling boil, add rice flour and quickly mix up. Switch off the flame and keep it covered. Combine together to form a soft pliable dough.
+                Step 7          
+                Shape them to a potli bag with the poornam / filling inside and steam in an Idli pot for 3 - 4 mins. Check if it is done and serve.
+                """);
+    }
+    public static void sweet_potato_bonda(){
+        System.out.println("""
+                Ingredients
+                ------------
+                1 sticks Sweet Potato\s
+                0.5 cups Chopped Onions\s
+                3 sticks Green Chilli\s
+                0.25 sticks Ginger \s
+                0.5 tsp Red Chilli Powder \s
+                0.5  tsp Asafoetida Powder \s
+                3 tsp Besan Flour \s
+                1.5 tsp Rice Flour \s
+                0.5 tsp Corn Flour \s
+                1 dashes Salt \s
+                Tempering Ingredients
+                0.25 tsp Mustard Seeds \s
+                0.25 tsp Urad dal \s
+                0.25 tsp Channa Dal \s
+                3 tsp Cooking Oil\s
+                
+                Instructions
+                ------------
+                Step 1
+                Cut and Pressure cook sweet potato for three whistles. Let it cool down and peel the sweet potato. Mash the sweet potato coarsely using a fork.
+                Step 2      
+                Heat a pan and add oil. Once it turns hot, add mustard seeds, urad dal, and channa dal. When they turn golden brown, add chopped green chilli, ginger pieces and chopped onions. Saute till the onion is cooked.
+                Step 3             
+                Add mashed sweet potato, salt, and asafoetida. Mix them together and cook till the water content disappear. Let it come to room temperature. Make lemon sized balls from it. Set them aside.
+                Step 4           
+                In another bowl, add besan flour, rice flour, and cornflour. Add salt, red chilli powder and asafoetida powder. Mix them together.
+                Step 5            
+                Add water little by little and mix to form a batter. Let the batter be in flowing consistency.
+                Step 6         
+                Grease the appe pan with oil. Coat the sweet potato filling with the batter and arrange them to the appe pan. Cook for about 3- 4 mins.
+                Step 7           
+                Flip over to the next side and cook until they are ready. Transfer to a serving plate.
+                """);
+    }
+}
+
